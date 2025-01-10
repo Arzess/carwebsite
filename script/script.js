@@ -1,12 +1,25 @@
 // Menu toggle logic
-const menu_button = document.querySelector(".header .menu-button");
+const menuButton = document.querySelector(".header .menu-button");
 const menu = document.querySelector(".menu");
+let scrollY = 0;
+
 const toggleMenu = () => {
-    menu_button.classList.toggle("opened");
-    document.body.classList.toggle("steady");   
+    if (menu.classList.contains("closed")) {
+        scrollY = window.scrollY;
+        document.body.style.position = 'fixed';
+        document.body.style.width = '100%';
+    } else {
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.width = '';
+        window.scrollTo(0, scrollY);
+    }
+
+    menuButton.classList.toggle("opened");
     menu.classList.toggle("closed");
-}
-menu_button.addEventListener("click", toggleMenu);
+};
+
+menuButton.addEventListener("click", toggleMenu);
 
 // Form logic
 

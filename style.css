@@ -2,6 +2,10 @@
 
 /* Font */
 @import url(./additional-styles/font.css);
+:root{
+    --scroll-y: 0;
+}
+
 
 *{
     padding: 0;
@@ -53,10 +57,6 @@ html, body{
 }
 body{
     background-color: var(--background-color);
-}
-body.steady{
-    height: 100vh;
-    overflow: hidden;
 }
 .sub-heading{
     font-size: 72px;
