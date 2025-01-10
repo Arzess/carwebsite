@@ -20,7 +20,6 @@ const setRealVH = () => {
   document.documentElement.style.setProperty('--real-vh', `${vh}px`);
 };
 
-
 const adjustHeroMobile = () => {
   if (window.innerWidth <= 500) {
     heading.style.marginBottom = `${cars.clientHeight - 30}px`; 
@@ -29,6 +28,7 @@ const adjustHeroMobile = () => {
   }
 };
 
+// Adjustments for the cars section
 const adjustCarsHeroMobile = () => {
   const marginBottom = heroForm.clientHeight + safeAreaBottom + "px";
   if (window.innerWidth <= 500) {
@@ -56,5 +56,10 @@ const adjustLayout = () => {
   }, 100); 
 };
 
-window.addEventListener("load", adjustLayout);
-window.addEventListener("resize", adjustLayout);
+const onLoadAndResize = () => {
+  adjustLayout();
+  window.removeEventListener("resize", onLoadAndResize);
+};
+
+window.addEventListener("load", onLoadAndResize);
+window.addEventListener("resize", onLoadAndResize);
