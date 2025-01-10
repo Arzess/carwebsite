@@ -41,7 +41,7 @@
     transition: border 0.3s ease-in-out;
 }
 
-.header select:hover, .header button:hover {
+.header .language-select:hover, .header button:hover {
     border: 1px solid var(--accent-color);
 }
 select:active, select:focus-visible {
