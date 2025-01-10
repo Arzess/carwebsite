@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Minimalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <!-- Animation -->
+     <link rel="stylesheet" href="./additional-styles/animation.css">
+    <link rel="stylesheet" href="style.css" />
+        <!-- Adaptive  -->
+        <link rel="stylesheet" href="./additional-styles/adaptive.css" />
+    <title>BMW X3 2017</title>
+  </head>
+  <body lang="UK">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <ul class="header-list">
+          <div class="language-select">
+            <div class="selected-option">
+              <img src="./img/flags/🇺🇦.png" alt="Ukraine flag" class="flag">
+              <p class="country-name">UA</p>
+              
+              <img src="./img/arrow-up.svg" alt="arrow up">
+            </div>
+            <div class="options-container">
+              <div class="option language" data-value="UA">
+                <img src="./img/flags/🇺🇦.png" alt="Ukraine flag" class="flag">
+                <p class="country-name">UA</p>
+                
+              </div>
+              <div class="option language" data-value="US">
+                <img src="./img/flags/🇺🇸.png" alt="American flag" class="flag">
+                <p class="country-name">US</p>
+                
+              </div>
+              <div class="option language" data-value="PL">
+                <img src="./img/flags/🇵🇱.png" alt="Poland flag" class="flag">
+                <p class="country-name">PL</p>
+
+              </div>
+              <div class="option language" data-value="RU">
+                <p class="country-name">RU</p>
+
+              </div>
+            </div>
+          </div>
+          <ul class="nav-bar">
+            <li class="nav-page">
+              <a href="" class="nav-page-link">CARFAX</a>
+            </li>
+            <li class="nav-page">
+              <a href="" class="nav-page-link">КАЛЬКУЛЯТОР</a>
+            </li>
+            <li class="nav-page"><a href="" class="nav-page-link">БЛОГ</a></li>
+            <li class="nav-page">
+              <a href="" class="nav-page-link">ВІДСТЕЖИТИ</a>
+            </li>
+          </ul>
+          <a href="#" class="skyline-motors-logo mobile">
+            <img src="./img/skyline-motors-logo-header.png" alt="skyline motors logo" class="logo">
+          </a>
+          <button class="menu-button">
+            <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_3195_1033)">
+              <path d="M34.624 11.884H8.40552V13.634H34.624V11.884Z" fill="#FC7B7B"/>
+              <path d="M34.624 20.634H8.40552V22.384H34.624V20.634Z" fill="#FC7B7B"/>
+              <path d="M34.624 29.384H8.40552V31.134H34.624V29.384Z" fill="#FC7B7B"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_3195_1033">
+              <rect width="42" height="42" fill="white" transform="translate(0.5 0.509033)"/>
+              </clipPath>
+              </defs>
+              </svg>Меню</span
+            >
+          </button>
+        </ul>
+      </div>
+    </header>
+    <!-- Menu -->
+     <div class="menu closed">
+      <img src="./img/skyline-motors-logo-header.png" alt="skyline motors logo" class="logo">
+      <ul class="nav-menu">
+        <li class="nav-element">
+          <a href="index.html" class="nav-link">ГОЛОВНА</a>
+        </li>
+        <li class="nav-element current">
+          <a href="#" class="nav-link">АВТО З США</a>
+        </li>
+        <li class="nav-element">
+          <a href="#" class="nav-link">авТО З ЄВРОПИ</a>
+        </li>
+        <li class="nav-element">
+          <a href="#" class="nav-link">ВІДГУКИ</a>
+        </li>
+        <li class="nav-element">
+          <a href="#" class="nav-link">кОНТАКТИ</a>
+        </li>
+      </ul>
+      
+      <img src="./img/skyline-motors-logo-header.png" alt="skyline motors logo" class="logo mobile">
+      <ul class="social-list">
+        <li class="social-media">
+          <a href="#" class="social-media-link"
+            ><img
+              src="./img/social/tiktok-menu.svg"
+              alt="tik tok logo"
+              class="social-logo"
+          /></a>
+        </li>
+        <li class="social-media">
+          <a href="#" class="social-media-link"
+            ><img
+              src="./img/social/instagram-menu.svg"
+              alt="instagram logo"
+              class="social-logo"
+          /></a>
+        </li>
+        <li class="social-media">
+          <a href="#" class="social-media-link"
+            ><img
+              src="./img/social/telegram-menu.svg"
+              alt="telegram logo"
+              class="social-logo"
+          /></a>
+        </li>
+        <li class="social-media">
+          <a href="#" class="social-media-link"
+            ><img
+              src="./img/social/youtube-menu.svg"
+              alt="youtube logo"
+              class="social-logo"
+          /></a>
+        </li>
+      </ul>
+      <ul class="social-list mobile">
+        <li class="social-media">
+          <a href="#" class="social-media-link"
+            ><img
+              src="./img/social/tiktok-menu-mobile.svg"
+              alt="tik tok logo"
+              class="social-logo"
+          /></a>
+        </li>
+        <!-- Mobile social media list -->
+        <li class="social-media">
+          <a href="#" class="social-media-link"
+            ><img
+              src="./img/social/instagram-menu-mobile.svg"
+              alt="instagram logo"
+              class="social-logo"
+          /></a>
+        </li>
+        <li class="social-media">
+          <a href="#" class="social-media-link"
+            ><img
+              src="./img/social/telegram-menu-mobile.svg"
+              alt="telegram logo"
+              class="social-logo"
+          /></a>
+        </li>
+        <li class="social-media">
+          <a href="#" class="social-media-link"
+            ><img
+              src="./img/social/youtube-menu-mobile.svg"
+              alt="youtube logo"
+              class="social-logo"
+          /></a>
+        </li>
+      </ul>
+     </div>
+     <!-- Breadcrumbs -->
+      <section class="breadcrumbs">
+        <div class="container">
+          <a href="#" class="back-button">Назад</a>
+          <a href="#" class="back-button mobile"> НА ГОЛОВНУ</a>
+        <nav class="breadcrumbs-pages">
+          <ul class="breadcrumbs-pages-list">
+            <li class="breadcrumb"><a href="index.html" class="page">головна</a></li>
+            <li class="breadcrumb"><a href="marketplace.html" class="page">Авто з сша</a></li>
+            <li class="breadcrumb"><a href="#" class="page">BMw x3 2017</a></li>
+          </ul>
+
+        </nav>
+        </div>
+      </section>
+      <!-- Car view -->
+      <section class="car-view">
+        <div class="container">
+          <div class="car-view-stats">
+            <div class="close">
+              <div class="close-half">
+                <div class="logo">
+                  <img src="./img/skyline-motors-logo-header.png" alt="logo">
+                </div>
+                <button class="close-button">&#10006;</button>
+              </div>
+            </div>            
+            <div class="main-img-container">
+                <div class="controls">
+                    <div class="left"><img src="./img/arrow-l.svg" alt="arrow left"></div>
+                    <div class="right"><img src="./img/arrow-r.svg" alt="arrow right"></div>
+                </div>
+                <img src="./img/bmw.jpg" alt="bmw x3" class="main-img">
+            </div>
+            <div class="gallery-and-stats">
+                <div class="gallery">
+                    <div class="controls">
+                        <div class="left"><img src="./img/arrow-l.svg" alt="arrow left"></div>
+                        <div class="right"><img src="./img/arrow-r.svg" alt="arrow right"></div>
+                    </div>
+                    <ul class="gallery-list no-scroll">
+                        <li class="gallery-img"><img src="./img/bmw.jpg" alt="bmw x3"></li>
+                        <li class="gallery-img"><img src="./img/1babfd2d8d515b5b02b80f911ad32c1a.jpg" alt="bmw x3"></li>
+                        <li class="gallery-img"><img src="./img/878b909794c48f0406ccb9111d62cb53.jpg" alt="bmw x3"></li>
+                        <li class="gallery-img"><img src="./img/bmw.jpg" alt="bmw x3"></li>
+                        <li class="gallery-img"><img src="./img/1babfd2d8d515b5b02b80f911ad32c1a.jpg" alt="bmw x3"></li>
+                        <li class="gallery-img"><img src="./img/878b909794c48f0406ccb9111d62cb53.jpg" alt="bmw x3"></li>
+ 
+                      </ul>
+                </div>
+                <ul class="stats-list">
+                    <li class="stat">
+                        <p class="stat-category">Коробка:</p>
+                        <p class="stat-value">АВТОМАТ</p>
+                    </li>
+                    <li class="stat">
+                        <p class="stat-category">Коробка:</p>
+                        <p class="stat-value">АВТОМАТ</p>
+                    </li>
+                    <li class="stat">
+                        <p class="stat-category">Коробка:</p>
+                        <p class="stat-value">АВТОМАТ</p>
+                    </li>
+                    <li class="stat">
+                        <p class="stat-category">Коробка:</p>
+                        <p class="stat-value">АВТОМАТ</p>
+                    </li>
+
+                </ul>
+            </div>
+            <a href="#" class="call">Зателефонувати</a>
+            <a href="car.html" class="info">Дізнатись деталі</a>
+          </div>
+          <div class="car-view-desc">
+            <div class="inner">
+              <div class="headings-container">
+                <h2 class="car-name slide-down">Land Rover <span class="model-year"><span class="car-model">Range Rover Autobiography</span> <span class="car-year">2023</span></span></h2>
+                <p class="car-price slide-down">$16 000</p>
+              </div>
+              <div class="car-mileage">
+                <p class="slide-down">
+                  Пробіг
+                </p>
+                <p class="mileage slide-down">100 000 КМ</p>
+              </div>
+              <ul class="desc-categories-list">
+                <li class="desc-category">
+                  <div class="category-header">
+                    <p class="slide-down">Безпека</p>
+                  </div>
+                  <p class="category-desc-list">
+                    ESP | ABS | LGBTQ+| подушка безпеки | Телефон як в старій бесі | магнітола | bluetooth-колонка | VHS програвач | dvd-плейер| бортовий комп’ютер | cтюардесса Жанна 
+                  </p>
+                </li>
+              </ul>
+              <ul class="desc-additional-list slide-down">
+                <li class="desc-additional">
+                  <p>Кожа-рожа, всі пріколи</p>
+                </li>
+                <li class="desc-additional">
+                  <p>Кожа-рожа, всі пріколи</p>
+                </li>
+                <li class="desc-additional">
+                  <p>Кожа-рожа, всі пріколи</p>
+                </li>
+                <li class="desc-additional">
+                  <p>Кожа-рожа, всі пріколи</p>
+                </li>
+                <li class="desc-additional">
+                  <p>Кожа-рожа, всі пріколи</p>
+                </li>
+                <li class="desc-additional">
+                  <p>Кожа-рожа, всі пріколи</p>
+                </li>
+              </ul>
+            </div>
+            </div>
+          <div class="offer mobile car-view-offer">
+            <div class="offer-name-img">
+                <img
+                  src="./img/1babfd2d8d515b5b02b80f911ad32c1a.jpg"
+                  alt="bmw"
+                  class="offer-img"
+                />
+                <p class="offer-name">
+                  <span class="offer-brand">BMW</span>
+                  <span class="offer-liters">428 L</span>
+                  <span class="offer-year">2016</span>
+                </p>
+              </div>
+              <div class="stat-row">
+                <div class="stat-block">
+                  <p class="stat-category">Пробіг:</p>
+                  <p class="stat-value">80 093 милі</p>
+                </div>
+                <div class="stat-block">
+                  <p class="stat-category">Пробіг:</p>
+                  <p class="stat-value">80 093 милі</p>
+                </div>
+              </div>
+              <div class="stat-row">
+                <div class="stat-block">
+                  <p class="stat-category">Пробіг:</p>
+                  <p class="stat-value">80 093 милі</p>
+                </div>
+                <div class="stat-block">
+                  <p class="stat-category">Пробіг:</p>
+                  <p class="stat-value">80 093 милі</p>
+                </div>
+              </div>
+              <div class="price">
+                <p>Ціна:</p>
+                <p class="price-amount">$16 000</p>
+              </div>
+              <a href="car.html" class="info">Дізнатись деталі</a>
+              <a href="#" class="apply mobile">зАЛИШИТИ ЗАЯВКУ</a>
+          </div>
+          <ul class="desc-additional-list mobile slide-down">
+            <li class="desc-additional">
+              <p>VIN: WBA3N9C51GK248912</p>
+            </li>
+            <li class="desc-additional">
+              <p>Стан: Starts</p>
+            </li>
+            <li class="desc-additional">
+              <p>Двигун: 2.0L DOHC 16 - VALVE 4- CYLINDER</p>
+            </li>
+            <li class="desc-additional">
+              <p>Основне ушкодження:
+                Front End</p>
+            </li>
+            <li class="desc-additional">
+              <p>Другорядне пошкодження:
+                Mechanic</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+       <!-- Best offers list -->
+    <section class="best-offers car-view-offers">
+        <div class="dotted-line-container">
+          <svg class="dotted-line"><line x1="0" x2="100%"></svg>
+        </div>
+        <div class="container">
+          <div class="offers-heading">
+            <div class="headings-container centered">
+              <h2 class="sub-heading slide-down">рекомендовані авто</h2>
+              <p class="sub-heading-text slide-down">КРАЩІ ПРОПОЗИЦІЇ З АУКЦІОНІВ</p>
+            </div>
+            <ul class="offer-list slide-down">
+              <li class="offer">
+                <div class="offer-name-img">
+                  <img
+                    src="./img/1babfd2d8d515b5b02b80f911ad32c1a.jpg"
+                    alt="bmw"
+                    class="offer-img"
+                  />
+                  <p class="offer-name">
+                    <span class="offer-brand">BMW</span>
+                    <span class="offer-liters">428 L</span>
+                    <span class="offer-year">2016</span>
+                  </p>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                </div>
+                <div class="price">
+                  <p>Ціна:</p>
+                  <p class="price-amount">$16 000</p>
+                </div>
+                <a href="car.html" class="info">Дізнатись деталі</a>
+              </li>
+              <li class="offer">
+                <div class="offer-name-img">
+                  <img
+                    src="./img/1babfd2d8d515b5b02b80f911ad32c1a.jpg"
+                    alt="bmw"
+                    class="offer-img"
+                  />
+                  <p class="offer-name">
+                    <span class="offer-brand">BMW</span>
+                    <span class="offer-liters">428 L</span>
+                    <span class="offer-year">2016</span>
+                  </p>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                </div>
+                <div class="price">
+                  <p>Ціна:</p>
+                  <p class="price-amount">$16 000</p>
+                </div>
+                <a href="car.html" class="info">Дізнатись деталі</a>
+              </li>
+              <li class="offer">
+                <div class="offer-name-img">
+                  <img
+                    src="./img/1babfd2d8d515b5b02b80f911ad32c1a.jpg"
+                    alt="bmw"
+                    class="offer-img"
+                  />
+                  <p class="offer-name">
+                    <span class="offer-brand">BMW</span>
+                    <span class="offer-liters">428 L</span>
+                    <span class="offer-year">2016</span>
+                  </p>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                </div>
+                <div class="price">
+                  <p>Ціна:</p>
+                  <p class="price-amount">$16 000</p>
+                </div>
+                <a href="car.html" class="info">Дізнатись деталі</a>
+              </li>
+              <li class="offer">
+                <div class="offer-name-img">
+                  <img
+                    src="./img/1babfd2d8d515b5b02b80f911ad32c1a.jpg"
+                    alt="bmw"
+                    class="offer-img"
+                  />
+                  <p class="offer-name">
+                    <span class="offer-brand">BMW</span>
+                    <span class="offer-liters">428 L</span>
+                    <span class="offer-year">2016</span>
+                  </p>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                </div>
+                <div class="price">
+                  <p>Ціна:</p>
+                  <p class="price-amount">$16 000</p>
+                </div>
+                <a href="car.html" class="info">Дізнатись деталі</a>
+              </li>
+              <li class="offer">
+                <div class="offer-name-img">
+                  <img
+                    src="./img/1babfd2d8d515b5b02b80f911ad32c1a.jpg"
+                    alt="bmw"
+                    class="offer-img"
+                  />
+                  <p class="offer-name">
+                    <span class="offer-brand">BMW</span>
+                    <span class="offer-liters">428 L</span>
+                    <span class="offer-year">2016</span>
+                  </p>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                </div>
+                <div class="price">
+                  <p>Ціна:</p>
+                  <p class="price-amount">$16 000</p>
+                </div>
+                <a href="car.html" class="info">Дізнатись деталі</a>
+              </li>
+              <li class="offer">
+                <div class="offer-name-img">
+                  <img
+                    src="./img/1babfd2d8d515b5b02b80f911ad32c1a.jpg"
+                    alt="bmw"
+                    class="offer-img"
+                  />
+                  <p class="offer-name">
+                    <span class="offer-brand">BMW</span>
+                    <span class="offer-liters">428 L</span>
+                    <span class="offer-year">2016</span>
+                  </p>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                </div>
+                <div class="price">
+                  <p>Ціна:</p>
+                  <p class="price-amount">$16 000</p>
+                </div>
+                <a href="car.html" class="info">Дізнатись деталі</a>
+              </li>
+              <li class="offer">
+                <div class="offer-name-img">
+                  <img
+                    src="./img/1babfd2d8d515b5b02b80f911ad32c1a.jpg"
+                    alt="bmw"
+                    class="offer-img"
+                  />
+                  <p class="offer-name">
+                    <span class="offer-brand">BMW</span>
+                    <span class="offer-liters">428 L</span>
+                    <span class="offer-year">2016</span>
+                  </p>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                </div>
+                <div class="price">
+                  <p>Ціна:</p>
+                  <p class="price-amount">$16 000</p>
+                </div>
+                <a href="car.html" class="info">Дізнатись деталі</a>
+              </li>
+              <li class="offer">
+                <div class="offer-name-img">
+                  <img
+                    src="./img/1babfd2d8d515b5b02b80f911ad32c1a.jpg"
+                    alt="bmw"
+                    class="offer-img"
+                  />
+                  <p class="offer-name">
+                    <span class="offer-brand">BMW</span>
+                    <span class="offer-liters">428 L</span>
+                    <span class="offer-year">2016</span>
+                  </p>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                  <div class="stat-block">
+                    <p class="stat-category">Пробіг:</p>
+                    <p class="stat-value">80 093 милі</p>
+                  </div>
+                </div>
+                <div class="price">
+                  <p>Ціна:</p>
+                  <p class="price-amount">$16 000</p>
+                </div>
+                <a href="car.html" class="info">Дізнатись деталі</a>
+              </li>
+            </ul>
+          </div>
+  
+          <button type="button" class="show-more">Показати більше</button>
+        </div>
+      </section>
+      <!-- Similar offers -->
+       <section class="similar-offers mobile">
+        <div class="container">
+            <h2 class="sub-heading slide-down">сХОЖІ ПРОПОЗИЦІЇ</h2>
+            <ul class="offer-list slide-down">
+                <li class="offer">
+                  <div class="offer-name-img">
+                    <img
+                      src="./img/1babfd2d8d515b5b02b80f911ad32c1a.jpg"
+                      alt="bmw"
+                      class="offer-img"
+                    />
+                    <p class="offer-name">
+                      <span class="offer-brand">BMW</span>
+                      <span class="offer-liters">428 L</span>
+                      <span class="offer-year">2016</span>
+                    </p>
+                  </div>
+                  <div class="stat-row">
+                    <div class="stat-block">
+                      <p class="stat-category">Пробіг:</p>
+                      <p class="stat-value">80 093 милі</p>
+                    </div>
+                    <div class="price">
+                        <p>Ціна:</p>
+                        <p class="price-amount">$16 000</p>
+                      </div>
+                  </div>
+                </li>
+                <li class="offer">
+                    <div class="offer-name-img">
+                      <img
+                        src="./img/1babfd2d8d515b5b02b80f911ad32c1a.jpg"
+                        alt="bmw"
+                        class="offer-img"
+                      />
+                      <p class="offer-name">
+                        <span class="offer-brand">BMW</span>
+                        <span class="offer-liters">428 L</span>
+                        <span class="offer-year">2016</span>
+                      </p>
+                    </div>
+                    <div class="stat-row">
+                      <div class="stat-block">
+                        <p class="stat-category">Пробіг:</p>
+                        <p class="stat-value">80 093 милі</p>
+                      </div>
+                      <div class="price">
+                          <p>Ціна:</p>
+                          <p class="price-amount">$16 000</p>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="offer">
+                    <div class="offer-name-img">
+                      <img
+                        src="./img/1babfd2d8d515b5b02b80f911ad32c1a.jpg"
+                        alt="bmw"
+                        class="offer-img"
+                      />
+                      <p class="offer-name">
+                        <span class="offer-brand">BMW</span>
+                        <span class="offer-liters">428 L</span>
+                        <span class="offer-year">2016</span>
+                      </p>
+                    </div>
+                    <div class="stat-row">
+                      <div class="stat-block">
+                        <p class="stat-category">Пробіг:</p>
+                        <p class="stat-value">80 093 милі</p>
+                      </div>
+                      <div class="price">
+                          <p>Ціна:</p>
+                          <p class="price-amount">$16 000</p>
+                        </div>
+                    </div>
+                  </li>
+                  
+              </ul>
+              <button type="button" class="show-more">Показати більше</button>
+        </div>
+       </section>
+    <!-- Feedback -->
+    <section class="feedback">
+      <div class="dotted-line-container mobile">
+        <svg class="dotted-line"><line x1="0" x2="100%"></svg>
+          <svg class="light-line"><line x1="0" x2="100%"></svg>
+      </div>
+      <div class="container">
+        <div class="form-text-container">
+          <div class="text-block">
+            <div class="heading-block">
+              <h2 class="sub-heading slide-down">зв’яжіться з нами</h2>
+              <p class="sub-heading-text slide-down">
+                Ми завжди на зв’язку. Напишіть нам, і ми відповімо найближчим
+                часом
+              </p>
+            </div>
+            <ul class="contacts-list">
+              <li class="contact slide-down">
+                <a href="#" class="contact-link"
+                  ><img src="./img/phone.svg" alt="phone icon" class="icon" />
+                  <p class="contact-desc">+380 (68) 000 00 00</p></a
+                >
+              </li>
+              <li class="contact slide-down">
+                <a href="#" class="contact-link">
+                  <img src="./img/email.svg" alt="email icon" class="icon" />
+                  <p class="contact-desc">skylinemotors@gmail.com</p>
+                </a>
+              </li>
+              <li class="contact slide-down">
+                <a href="#" class="contact-link">
+                  <img
+                    src="./img/location.svg"
+                    alt="location icon"
+                    class="icon"
+                  />
+                  <p class="contact-desc">Miedzianogórska 6C, Warsaw, Poland</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Form -->
+          <form action="" class="consultation-form">
+            <div class="overlay">
+              <div class="form-backlight"><img src="./img/Ellipse-40.png" alt="backlight"></div>
+              <p class="success">Успішно</p>
+              <div class="text-container">
+                <p class="success-icon">✅</p>
+                <p>Ми отримали вашу заявку і зв’яжемось з вами найближчим часом!</p>
+              </div>
+              <a href="index.html" class="return-main">Повернутись на головну</a>
+            </div>
+            <div class="content">
+              <p class="consultation-form-text">
+                Отримайте відповіді на всі питання від наших фахівців
+              </p>
+              <div class="inputs">
+                <input type="text" id="name" placeholder="ім'я" />
+                <div class="phone-input">
+                  <div class="language-select form">
+                    <div class="selected-option">
+                      <img src="./img/flags/🇺🇦.png" alt="Ukraine flag" class="flag">
+                      
+                      <img src="./img/arrow-up.svg" alt="arrow up">
+                    </div>
+                    <div class="options-container">
+                      <div class="option language" data-value="UA">
+                        <img src="./img/flags/🇺🇦.png" alt="Ukraine flag" class="flag">
+                        
+                      </div>
+                      <div class="option language" data-value="US">
+                        <img src="./img/flags/🇺🇸.png" alt="American flag" class="flag">
+                        
+                      </div>
+                      <div class="option language" data-value="PL">
+                        <img src="./img/flags/🇵🇱.png" alt="Poland flag" class="flag">
+                      </div>
+                    </div>
+                  </div>
+                  <input type="tel" id="tel" placeholder="+380" />
+                </div>
+                <textarea class="form-comment" placeholder="Коментар"></textarea>
+  
+                <button type="submit" class="consultation-submit-button">
+                  отримати консультацію
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="background-logo mobile">
+          <img src="./img/logo-non-transparent.png" alt="skyline logo round">
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="logo">
+          <img
+            src="./img/logo.png"
+            alt="skyline motors logo"
+            class="logo-img"
+          />
+        </div>
+        <div class="links">
+          <!-- Social medias -->
+          <ul class="social-list">
+            <li class="social-media">
+              <a href="#" class="social-media-link"
+                ><img
+                  src="./img/social/tiktok.svg"
+                  alt="tik tok logo"
+                  class="social-logo"
+              /></a>
+            </li>
+            <li class="social-media">
+              <a href="#" class="social-media-link"
+                ><img
+                  src="./img/social/instagram.svg"
+                  alt="instagram logo"
+                  class="social-logo"
+              /></a>
+            </li>
+            <li class="social-media">
+              <a href="#" class="social-media-link"
+                ><img
+                  src="./img/social/telegram.svg"
+                  alt="telegram logo"
+                  class="social-logo"
+              /></a>
+            </li>
+            <li class="social-media">
+              <a href="#" class="social-media-link"
+                ><img
+                  src="./img/social/youtube.svg"
+                  alt="youtube logo"
+                  class="social-logo"
+              /></a>
+            </li>
+          </ul>
+          <div class="info-block">
+            <ul class="info-list">
+              <li class="info-page">
+                <a href="" class="info-link">пРАВИЛА ТА УМОВИ</a>
+              </li>
+              <li class="info-page">
+                <a href="" class="info-link">пОЛІТИКА КОНФІДЕНЦІЙНОСТІ</a>
+              </li>
+              <li class="info-page">
+                <a href="" class="info-link">оПЛАТА </a>
+              </li>
+              <li class="info-page">
+                <a href="" class="info-link">дОГОВІР-ОФЕРТА</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="copyright-text">вСІ ПРАВА ЗАХИЩЕНІ</p>
+          <p class="copyright-text">Skyline Motors 2024©</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Mobile navbar -->
+    <nav class="mobile mobile-navbar">
+      <ul class="mobile-navbar-list">
+        <li class="mobile-navbar-element"><a href="#"><img src="./img/carfax-mobile-logo.svg" alt="carfax mobile logo"></a><p class="mobile-navbar-page-name">carfax</p></li>
+        <li class="mobile-navbar-element"><a href="#"><img src="./img/globe-icn.svg" alt="globe icon"></a><p class="mobile-navbar-page-name">Відстежити</p></li>
+        <li class="mobile-navbar-element"><a href="#"><img src="./img/blog-icon.svg" alt="paper scroll icon"></a><p class="mobile-navbar-page-name">Блог</p></li>
+        <li class="mobile-navbar-element"><a href="#"><img src="./img/calculator-icon.svg" alt="calculator icon"></a><p class="mobile-navbar-page-name">калькулятор</p></li>
+      </ul>
+     </nav>
+  </body>
+  <!-- Scripts -->
+   <script src="./script/script.js"></script>
+   <script src="./script/car-view.js"></script>
+   <script src="./script/animation.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</html>

@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Ruberoid;
+    src: url(../font/Ruberoid-Light.otf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: Ruberoid;
+    src: url(../font/Ruberoid-Medium.otf);
+    font-weight: medium;
+    font-weight: 400;
+}
+@font-face {
+    font-family: Ruberoid;
+    src: url(../font/Ruberoid-Bold.otf);
+    font-weight: bold;
+    font-weight: 600;
+}

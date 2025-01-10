@@ -1,0 +1,3241 @@
+@import url(colors.css);
+
+.why-us .advantages.mobile {
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1920px) {
+
+    /* Marketplace */
+    .offer {
+        width: 20%;
+    }
+
+    /* Car view */
+    .car-view-desc .inner {
+        width: 100%;
+    }
+
+    .latest-news .piece-of-news .news-heading {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    .latest-news .piece-of-news {
+        height: 720px;
+    }
+
+    .latest-news .piece-of-news .news-heading-text {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+
+    .latest-news .piece-of-news .additional-text {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .latest-news .piece-of-news .show-more {
+        font-size: 1.75em;
+        padding: 40px 120px;
+    }
+
+    .why-us .advantage-desc {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .why-us .advantage-icon-container img {
+        width: 72px;
+        height: 72px;
+    }
+}
+
+/* Fix */
+@media screen and (max-width: 1700px) {
+
+    /* Why us*/
+    .why-us .goal {
+        font-size: 46px;
+    }
+
+    /* Footer fix */
+    .footer .info-list a {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1660px) {
+    .why-us .goal {
+        font-size: 42px;
+    }
+
+    .why-us .advantage-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Car view */
+    .car-view .car-name {
+        font-size: 70px;
+    }
+    .car-view .car-name .model-year{
+        font-size: 30px;
+    }
+
+    .car-view .car-price {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .car-view .car-mileage {
+        font-size: 32px;
+    }
+
+    .car-view .desc-categories-list .category-header {
+        font-size: 18px;
+    }
+
+    .car-view .category-desc-list {
+        font-size: 18px;
+    }
+}
+
+/* Large laptop */
+@media screen and (max-width: 1500px) {
+    .sub-heading {
+        font-size: 54px !important;
+    }
+
+    .sub-heading-text {
+        font-size: 24px !important;
+    }
+
+    /* Hero section */
+    .hero {
+        height: 100vh;
+    }
+
+    /* Nav bar */
+    .header .nav-bar {
+        font-size: 18px;
+    }
+
+    .hero .comment {
+        font-size: 12px;
+        width: 224px;
+        height: 78px;
+    }
+
+    .hero .heading {
+        font-size: 62px;
+        width: auto;
+    }
+
+    .hero .sub-heading {
+        font-size: 32px !important;
+    }
+
+    .hero .consultation-form .consultation-form-text {
+        font-size: 20px;
+    }
+
+    .consultation-form .inputs input, .hero .consultation-form .inputs .form-comment {
+        font-size: 12px !important; 
+    }
+
+    .consultation-form select {
+        font-size: 24px;
+        background: url(../img/arrow.svg) no-repeat 80% 50%/16px 16px, rgba(0, 0, 0, 0.25);
+    }
+
+    .consultation-form .inputs .consultation-submit-button {
+        font-size: 13px !important;
+
+    }
+
+    /* Car view */
+    .car-view .car-name {
+        font-size: 60px;
+    }
+
+    .car-view .car-price {
+        font-size: 50px;
+        line-height: 40px;
+    }
+
+    .car-view .car-mileage {
+        font-size: 30px;
+    }
+
+    .car-view .desc-categories-list .category-header {
+        font-size: 16px;
+    }
+
+    .car-view .category-desc-list {
+        font-size: 16px;
+    }
+
+    /* Auto order section */
+    .auto-order .more-info {
+        font-size: 24px;
+        width: 400px;
+        height: 59px;
+    }
+
+    .gallery-and-controls .controls a {
+        padding: 15px 30px;
+        font-size: 20px;
+    }
+
+    .auto-order .sub-heading-text {
+        line-height: 30px;
+    }
+
+    /* Why us section */
+    .why-us .advantage-name {
+        font-size: 18px;
+    }
+
+    .why-us .goal {
+        font-size: 38px;
+    }
+
+    .why-us .advantage-desc {
+        font-size: 10px;
+    }
+
+    /* About us section*/
+    .about-us-text {
+        font-size: 24px;
+    }
+
+    .about-us .container {
+        gap: 60px;
+    }
+
+    /* Feedback section */
+
+    .feedback .consultation-form input, .feedback .form-comment {
+        font-size: 16px !important;
+    }
+
+    .feedback .consultation-form select {
+        font-size: 16px;
+        background: url(../img/arrow.svg) no-repeat 80% 50%/20px 20px, rgba(0, 0, 0, 0.25);
+    }
+
+    .feedback .consultation-form .inputs .consultation-submit-button {
+        font-size: 18px !important;
+        padding: 35px 55px;
+    }
+
+    .feedback .consultation-form .consultation-form-text {
+        font-size: 22px;
+        max-width: 300px;
+    }
+
+    /* Best offers */
+    .offers-heading {
+        gap: 70px;
+    }
+
+    .best-offers .container {
+        gap: 70px;
+    }
+
+    .show-more {
+        margin-bottom: 70px;
+    }
+
+    /* Why us */
+    .why-us .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    /* Clients section */
+    .clients .review-button {
+        font-size: 22px;
+        padding: 30px 100px;
+    }
+
+    .clients .headings-container {
+        gap: 20px;
+    }
+
+    .review .author-name {
+        font-size: 24px;
+    }
+
+    .review .car-name {
+        font-size: 20px;
+    }
+
+    .review .review-desc {
+        font-size: 13px;
+    }
+
+    /* Feedback */
+    .feedback .form-text-container {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer .logo img {
+        width: 180px;
+    }
+
+    .footer .info-list a {
+        font-size: 20px;
+    }
+
+    .footer .social-media a {
+        height: 46px;
+        width: 46px;
+    }
+
+    .footer .social-logo {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer .container {
+        gap: 60px;
+    }
+
+    .footer .copyright {
+        font-size: 14px;
+    }
+
+}
+
+/* Laptop M */
+
+@media screen and (max-width: 1350px) {
+    .sub-heading {
+        font-size: 48px !important;
+    }
+
+    .sub-heading-text {
+        font-size: 20px !important;
+    }
+
+    /* Hero */
+    .consultation-form select {
+        font-size: 20px;
+        background: url(../img/arrow.svg) no-repeat 80% 50%/14px 14px, rgba(0, 0, 0, 0.25);
+    }
+
+    .hero .heading {
+        font-size: 48px;
+    }
+
+    .hero .sub-heading {
+        font-size: 28px !important;
+    }
+
+    .header .nav-bar {
+        gap: 60px;
+    }
+
+    .header .container {
+        max-width: 100%;
+    }
+
+    .hero .consultation-form .inputs input, .hero .inputs .consultation-form .form-comment {
+        font-size: 14px;
+    }
+
+    .hero .consultation-form .consultation-form-text {
+        font-size: 16px;
+    }
+
+    /* Car view */
+    .car-view .car-name {
+        font-size: 70px;
+    }
+
+    .car-view .car-price {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .car-view .car-mileage {
+        font-size: 32px;
+    }
+
+    .car-view .desc-categories-list .category-header {
+        font-size: 18px;
+    }
+
+    .car-view .category-desc-list {
+        font-size: 18px;
+    }
+    /* Marketplace */
+    .marketplace .filter{
+        width: 380px;
+        min-width: 380px;
+    }
+
+    /* Auto order */
+    /* .gallery-container {
+        width: 100%;
+        position: relative;
+        height: 350px;
+    }
+
+    .gallery-container .discount {
+        font-size: 36px;
+    }
+
+    .gallery-container .column-text {
+        font-size: 16px;
+    } */
+
+    /* .controls img {
+        width: 12px;
+    } */
+
+    .auto-order .more-info {
+        font-size: 20px;
+        width: 300px;
+        height: 50px;
+    }
+
+    /* Why us section */
+    .why-us .advantage-name {
+        font-size: 18px;
+    }
+
+    .why-us .advantage-desc {
+        font-size: 8px;
+        line-height: 13px;
+    }
+
+    .why-us .goal {
+        font-size: 28px;
+    }
+
+    .why-us .advantage-icon {
+        width: 40px;
+        height: 40px;
+    }
+    /* About us */
+    /* Feedback */
+    .feedback .contact-desc {
+        font-size: 20px;
+    }
+
+    .feedback .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .feedback .consultation-form .inputs .consultation-submit-button {
+        font-size: 14px !important;
+        padding: 25px 45px;
+    }
+
+    .feedback .consultation-form .consultation-form-text {
+        font-size: 16px;
+        max-width: 300px;
+    }
+
+    .feedback .consultation-form input, .feedback .form-comment {
+        font-size: 12px !important;
+    }
+
+    .feedback .consultation-form select {
+        font-size: 14px;
+        background: url(../img/arrow.svg) no-repeat 80% 50%/14px 14px, rgba(0, 0, 0, 0.25);
+    }
+
+    /* Footer */
+    .footer .info-list a {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 1270px) {
+
+    /* Marketplace */
+    .marketplace .sub-heading {
+        font-size: 36px !important;
+    }
+
+    .marketplace .sub-heading-text {
+        font-size: 14px !important;
+    }
+}
+
+
+/* Why us fix */
+@media screen and (max-width: 1100px) {
+    .why-us .advantage-name {
+        font-size: 15px;
+    }
+
+    .why-us .goal {
+        font-size: 24px;
+    }
+
+    .why-us .advantage-icon {
+        width: 30px;
+        height: 30px;
+    }
+        /* Marketplace */
+        .marketplace .filter{
+            width: 290px;
+            min-width: 290px;
+        }
+
+}
+
+/* Laptop */
+@media screen and (max-width: 1024px) {
+    .language-select .selected-option .country-name, .option.language{
+        line-height: 13px;
+        font-size: 10px;
+    }
+    .language-select{
+        width: 70px;
+    }
+    .dotted-line-container{
+        margin-top: 54px;
+        margin-bottom: 54px;
+    }
+    /* Breadcrumbs */
+    .breadcrumbs .back-button{
+        padding: 8px;
+        font-size: 9.6px;
+        line-height: 13px;
+    }
+    .breadcrumbs .back-button::before {
+        width: 7px;
+        height: 12px;
+    }
+    .breadcrumb{
+        font-size: 11px;
+        line-height: 15px;
+
+    }
+    .why-us.marketplace .headings-container {
+        margin-top: 106px;
+    }
+    /* Marketplace */
+    .marketplace .filter {
+        width: 271px;
+        min-width: 271px;
+    }
+    .marketplace .marketplace-right-block {
+        gap: 40px;
+    }
+    .marketplace .offer {
+        width: 18%;
+        padding: 5px 10px;
+    }
+
+    .marketplace .offer-name {
+        font-size: 10px;
+        line-height: 12px;
+        margin-bottom: 4px;
+    }
+
+    .marketplace .stat-block {
+        font-size: 5px;
+        line-height: 8px;
+    }
+
+    .marketplace .stat-block .stat-value {
+        font-size: 5px;
+    }
+
+    .marketplace .offer img {
+        margin-top: -5px;
+        margin-right: -10px;
+        margin-left: -10px;
+        width: calc(100% + (2 * 10px));
+    }
+
+    .marketplace .price {
+        font-size: 6.25px;
+        margin-bottom: 0;
+    }
+
+    .marketplace .price .price-amount {
+        font-size: 9px;
+        line-height: 12px;
+    }
+    .marketplace .page-menu{
+        gap: 8px;
+    }
+    .marketplace .page-menu .page {
+        font-size: 8.5px;
+        font-weight: 400;
+        line-height: 11px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        border: 1px solid var(--accent-color);
+        padding: 6px 10px;
+    }
+    .stat-row {
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    .marketplace .offer .info {
+        font-size: 5.5px;
+        line-height: 7px;
+    }
+    .marketplace .marketplace-sort-container, .marketplace .marketplace-sort{
+        font-size: 6px;
+        line-height: 8px;
+    }
+    .marketplace .marketplace-sort{
+        width: 130px;
+        background: url(../img/arrow-sort-inactive.svg) no-repeat 100% 50% / 10px 10px;
+    }
+    .marketplace .marketplace-sort-container{
+        height: 22px;
+        padding: 7px 10px;
+    }
+    /* Filter */
+    .filter .category-content {
+        gap: 10px;
+        padding: 5px 10px;
+    }
+    .brand-list {
+        gap: 8px;
+    }
+    .filter .filter-img {
+        height: 110px;
+    }
+    .filter .filter-top p{
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .filter .fitler-top img:first-child{
+        width: 13px;
+        height: 13px;
+    }
+    .filter .category-top p {
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .filter .category-top img{
+        width: 12px;
+        height: 10px;
+    }
+    .marketplace .filter-top{
+        padding: 7px;
+    }
+    
+    .marketplace .filter-top img:first-child{
+        width: 13px;
+        height: 13px;
+    }
+    .filter .category-content input[type="search"]{
+        font-size: 8px;
+        line-height: 10px;
+        padding: 4px 16px;
+    }
+    .filter .category-top {
+        padding: 6px;
+    }
+    .brand-list .brand input[type="checkbox"] {
+        width: 9px;
+        height: 9px;
+    }
+    .brand-list .brand{
+        gap: 4px;
+        font-size: 7px;
+        line-height: 9px;
+    }
+    .category-content .price-range-boxes input {
+        padding: 4px 6px;
+        font-size: 7.5px;
+    }
+    .slider-track {
+        width: 100%;
+        height: 4px;
+        margin: auto;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+      input[type="range"]::-webkit-slider-runnable-track {
+        -webkit-appearance: none;
+        height: 4px;
+      }
+      input[type="range"]::-moz-range-track {
+        -moz-appearance: none;
+        height: 4px;
+      }
+      input[type="range"]::-ms-track {
+        appearance: none;
+        height: 4px;
+      }
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 9px;
+        width: 9px;
+        border: 1.5px solid var(--range-color);
+        background-color: var(--text-color);
+        cursor: pointer;
+        margin-top: -2px;
+        pointer-events: auto;
+        border-radius: 2px;
+      }
+      input[type="range"]::-moz-range-thumb {
+        -webkit-appearance: none;
+        height: 9px;
+        width: 9px;
+        cursor: pointer;
+        border-radius: 2px;
+        border: 1.5px solid var(--range-color);
+        background-color: var(--text-color);
+        pointer-events: auto;
+        border: none;
+      }
+      input[type="range"]::-ms-thumb {
+        appearance: none;
+        height: 9px;
+        width: 9px;
+        cursor: pointer;
+        border-radius: 2px;
+        background-color: var(--range-color);
+        pointer-events: auto;
+      }
+    /* Car view */
+    .car-view .car-name{
+        font-size: 53px;    
+        /* line-height: 70px; */
+    }
+    .car-view-stats{
+        width: 422px;
+        min-width: 422px;
+        gap: 8px;
+    }
+    .car-view .car-mileage {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .car-view .desc-categories-list .category-header {
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .car-view .category-desc-list {
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .car-view .desc-additional-list{
+        padding: 14px;
+        gap: 4px;
+        font-size: 9px;
+        line-height: 12px;
+    }
+    .controls .left, .controls .right{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .controls img{
+        width: 12px;
+        height: 21px;
+    }
+    .car-view .main-img-container {
+        height: 231px;
+    }
+    .car-view .gallery {
+        position: relative;
+        height: 48px;
+    }
+    .car-view .gallery-list img{
+        width: 83px;
+        height: 48px;
+        object-fit: cover;
+    }
+    .car-view .stats-list .stat {
+        width: 100%;
+        padding: 6px 5.5px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .car-view .info, .car-view .call {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 11px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        border-radius: 1px;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: var(--text-color);
+    }
+    .gallery-and-stats .gallery .controls img{
+        width: 8px;
+        height: 16px;
+    }
+   
+    /* General */
+    .sub-heading {
+        font-size: 30px !important;
+    }
+
+    .sub-heading-text {
+        font-size: 16px !important;
+    }
+    /* Header */
+    .header .nav-bar {
+        gap: 50px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .header select,
+    .header button {
+        font-size: 9px;
+    }
+
+    .header button img {
+        height: 22px;
+        width: 22px;
+    }
+
+    .header button svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .header select {
+        width: 70px;
+        background: url(../img/arrow.svg) no-repeat 80% 50% / 12px 12px;
+    }
+
+    .hero .heading {
+        font-size: 36px;
+    }
+
+    .hero .sub-heading {
+        font-size: 22px !important;
+    }
+
+    .hero .consultation-form {
+        width: 22em;
+    }
+
+    .hero .consultation-form .inputs input, .hero .consultation-form .inputs .form-comment {
+        font-size: 8.5px !important;
+        padding: 10px;
+    }
+
+    .hero .consultation-form .consultation-form-text {
+        font-size: 12px;
+    }
+
+    .hero .cars .car-img {
+        bottom: 0;
+    }
+
+    .consultation-form .inputs .consultation-submit-button {
+        font-size: 10px !important;
+        white-space: nowrap;
+        padding: 20px 0 !important;
+    }
+
+    .consultation-form select {
+        font-size: 17px;
+        width: 50px;
+        background: url(../img/arrow.svg) no-repeat 85% 50% / 12px 12px, rgba(0, 0, 0, 0.25);
+    }
+    .consultation-form .language-select{
+        width: 60px;
+    }
+    .selected-option .flag, .option.language .flag  {
+        width: 12px;
+        height: 12px;
+        margin: 0;
+    }
+    .selected-option img:last-child{
+        width: 10px;
+        height: 8px;
+    }
+
+    /* Latest news */
+    .latest-news .piece-of-news {
+        height: 384px;
+        padding: 50px 40px;
+    }
+
+    .latest-news .piece-of-news .news-heading {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .latest-news .piece-of-news .news-heading-text {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+    .latest-news .piece-of-news .additional-text {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        width: 300px;
+    }
+
+    .latest-news .piece-of-news .show-more {
+        font-size: 0.8rem;
+        padding: 20px 70px;
+        line-height: 1.25rem;
+    }
+
+    .latest-news .scroll-menu {
+        padding: 10px 30px;
+    }
+
+    .latest-news .scroll-link.selected {
+        width: 14px !important;
+        height: 14px !important;
+    }
+
+    .latest-news .scroll-link {
+        width: 10px;
+        height: 10px;
+    }
+
+    .latest-news .scroll:first-child .scroll-link,
+    .latest-news .scroll:last-child .scroll-link {
+        width: 8px;
+        height: 8px;
+    }
+
+    /* Auto order */
+    .auto-order .sub-heading-text {
+        line-height: 20px;
+    }
+
+    .gallery-container {
+        width: 400px;
+        position: relative;
+        height: 250px;
+    }
+
+    .gallery-container .discount {
+        font-size: 30px;
+    }
+
+    .gallery-container .text-column-list {
+        margin-top: 30px;
+    }
+
+    .gallery-and-controls .controls {
+        gap: 20px;
+    }
+
+    .gallery-container .column-text {
+        font-size: 12px;
+    }
+
+    .gallery-and-controls .controls a {
+        padding: 12px 24px;
+        font-size: 20px;
+    }
+
+    /* Best offers */
+    .best-offers .container {
+        margin-top: 54px;
+    }
+    .offer-name {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .offer img {
+        height: 120px;
+    }
+
+    .stat-block {
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    .price {
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    .price .price-amount {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .offer .info {
+        font-size: 9px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+    .offer-name-img {
+        gap: 16px;
+    }
+
+    .show-more {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 20px 70px;
+    }
+
+
+    /* Why us */
+    .why-us .advantage-icon-container img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .why-us .advantage-desc {
+        font-size: 7px;
+        line-height: 10px;
+    }
+
+    .about-us-text {
+        font-size: 20.29px;
+        font-weight: 400;
+        line-height: 26.61px;
+        letter-spacing: -0.01em;
+
+    }
+
+    .about-us .sub-heading-text {
+        line-height: 35px;
+    }
+    .about-us::before{
+        width: 627px;
+        height: 627px;
+        left: -200px;
+    }
+
+    /* Clients */
+    .clients .review {
+        width: 281px;
+    }
+
+    .clients .review::after {
+        background-size: cover;
+    }
+
+    .review .author-avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .review .author-name {
+        font-size: 16px;
+    }
+
+    .review .car-name {
+        font-size: 14px;
+    }
+
+    .review .review-desc {
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .clients .review .inner-review-container {
+        gap: 32px;
+    }
+
+    .clients .review-button {
+        font-size: 15px;
+        line-height: 19px;
+        padding: 20px 50px;
+    }
+
+    /* Feedback */
+    .feedback .form-text-container {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .feedback {
+        height: auto;
+    }
+
+    .feedback .text-block {
+        width: 100%;
+    }
+
+    .feedback .consultation-form {
+        width: 45em;
+    }
+
+    .feedback .sub-heading-text {
+        width: 300px;
+    }
+
+    .feedback .consultation-form .consultation-form-text {
+        font-size: 16px;
+        max-width: 300px;
+    }
+
+    .feedback .consultation-form select {
+        font-size: 16px;
+        background: url(../img/arrow.svg) no-repeat 80% 50%/16px 16px, rgba(0, 0, 0, 0.25);
+    }
+
+    .feedback .consultation-form input, .feedback .form-comment {
+        font-size: 15px !important;
+    }
+
+    .feedback .consultation-form .inputs .consultation-submit-button {
+        font-size: 18px !important;
+        padding: 30px 40px;
+    }
+
+    /* Footer */
+    .footer .info-list a {
+        font-size: 16px;
+    }
+
+    .footer .links {
+        gap: 20px;
+    }
+
+    .footer .container {
+        gap: 20px;
+    }
+
+    .footer .info-list {
+        flex-direction: column;
+        gap: 14px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .social-logo {
+        width: 16px;
+        height: 16px;
+    }
+
+    .footer .social-media a {
+        height: 36px;
+        width: 36px;
+    }
+
+    .footer .copyright {
+        font-size: 12px;
+    }
+
+    .footer .container {
+        gap: 40px;
+    }
+}
+
+/* Menu and hero fix */
+@media screen and (max-width: 970px) {
+
+    .header .skyline-motors-logo img {
+        width: 75px;
+        height: 25px;
+    }
+
+    /* Why us */
+    .why-us .advantage-icon-container img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .why-us .goal {
+        font-size: 22px;
+    }
+}
+
+/* Tablet (including mobile design) */
+
+@media screen and (max-width: 768px) {
+    .language-select{
+        width: 51px;
+        line-height: 10px;
+    }
+    .language-select .selected-option .country-name, .option.language{
+        
+        font-size: 7px;
+    }
+    .dotted-line-container{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .why-us.marketplace .headings-container {
+        margin-top: 80px;
+    }
+    /* General */
+    .show-more {
+        padding: 15px 50px;
+        font-size: 10.94px;
+        line-height: 14.4px;
+        letter-spacing: 0.02em;
+    }
+
+    /* Header */
+    .header .nav-bar {
+        gap: 40px;
+        font-size: 9px;
+        line-height: 12px;
+    }
+
+    .header select {
+        font-size: 7px;
+    }
+
+    .header button {
+        font-size: 7px;
+    }
+
+    .header button svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .header button img {
+        width: 17px;
+        height: 17px;
+    }
+/* Marketplace */
+.marketplace .sub-heading {
+    font-size: 20px !important;
+}
+.marketplace .sub-heading-text{
+    font-size: 10px !important;
+}
+    .marketplace .show-more {
+        border: 1px solid var(--accent-color);
+        font-family: Ruberoid;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18.42px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        justify-content: center;
+    }
+    .marketplace .marketplace-right-block {
+        gap: 30px;
+    }
+
+    .marketplace .offer-name {
+        font-size: 7px;
+        line-height: 9px;
+        margin-bottom: 2px;
+    }
+
+    .marketplace .stat-block {
+        font-size: 4.5px;
+        line-height: 5px;
+    }
+
+    .marketplace .stat-block .stat-value {
+        font-size: 4px;
+    }
+
+    .marketplace .offer img {
+        margin-top: -3px;
+        margin-right: -5px;
+        margin-left: -5px;
+        width: calc(100% + (2 * 5px));
+    }
+
+    .marketplace .price {
+        font-size: 5px;
+        margin-bottom: 0;
+    }
+
+    .marketplace .price .price-amount {
+        font-size: 7px;
+        line-height: 9px;
+    }
+    .marketplace .page-menu{
+        gap: 6px;
+    }
+    .marketplace .page-menu .page {
+        font-size: 6px;
+        font-weight: 400;
+        line-height: 8px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        border: 1px solid var(--accent-color);
+        padding: 4px 7px;
+    }
+    .stat-row {
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    .marketplace .offer .info {
+        font-size: 4px;
+        line-height: 5.5px;
+        padding: 3px 0; 
+    }
+    .marketplace .marketplace-sort-container, .marketplace .marketplace-sort{
+        font-size: 6px;
+        line-height: 8px;
+    }
+    .marketplace .marketplace-sort{
+        width: 130px;
+        background: url(../img/arrow-sort-inactive.svg) no-repeat 100% 50% / 10px 10px;
+    }
+    .marketplace .marketplace-sort-container{
+        height: 22px;
+        padding: 7px 10px;
+    }
+    /* Filter */
+    .marketplace .filter {
+        width: 203px;
+        min-width: 203px;
+    }
+    .filter .category-top p {
+        font-size: 7px;
+        line-height: 10px;
+    }   
+    .filter .category-top img {
+        width: 10px;
+        height: 8px;
+    }
+    .filter .category-content input[type="search"] {
+        font-size: 6px;
+        line-height: 7.5px;
+        padding: 3px 12px;
+    }
+    .brand-list .brand input[type="checkbox"] {
+        width: 7px;
+        height: 7px;
+    }
+    .brand-list .brand {
+        gap: 2px;
+        font-size: 5px;
+        line-height: 7px;
+    }
+    .category-content .price-range-boxes input {
+        padding: 4px 6px;
+        font-size: 7.5px;
+    }
+    .slider-track {
+        width: 100%;
+        height: 3px;
+        margin: auto;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+      input[type="range"]::-webkit-slider-runnable-track {
+        -webkit-appearance: none;
+        height: 3px;
+      }
+      input[type="range"]::-moz-range-track {
+        -moz-appearance: none;
+        height: 3px;
+      }
+      input[type="range"]::-ms-track {
+        appearance: none;
+        height: 3px;
+      }
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 7px;
+        width: 7px;
+        border: 1.2px solid var(--range-color);
+        background-color: var(--text-color);
+        cursor: pointer;
+        margin-top: -2px;
+        pointer-events: auto;
+        border-radius: 2px;
+      }
+      input[type="range"]::-moz-range-thumb {
+        -webkit-appearance: none;
+        height: 7px;
+        width: 7px;
+        cursor: pointer;
+        border-radius: 2px;
+        border: 1.5px solid var(--range-color);
+        background-color: var(--text-color);
+        pointer-events: auto;
+        border: none;
+      }
+      input[type="range"]::-ms-thumb {
+        appearance: none;
+        height: 7px;
+        width: 7px;
+        cursor: pointer;
+        border-radius: 2px;
+        background-color: var(--range-color);
+        pointer-events: auto;
+      }
+
+    /* Hero */
+    .hero::after {
+        opacity: 0.17;
+        filter: blur(9.4px);
+    }
+
+    .hero .comment {
+        display: none;
+    }
+
+    .hero .heading {
+        font-size: 30px;
+    }
+
+    .hero .sub-heading {
+        font-size: 16px !important;
+        font-weight: 300;
+        line-height: 20.98px;
+        letter-spacing: -0.01em;
+        color: rgba(237, 249, 250, 0.5);
+
+    }
+
+    .hero .consultation-form {
+        width: 16em;
+    }
+
+    .consultation-form .inputs .consultation-submit-button {
+        font-size: 8px !important;
+        line-height: 11px;
+        /* padding: 10px 0 !important; */
+    }
+
+    .hero .consultation-form .consultation-form-text {
+        font-size: 8px;
+    }
+
+    .hero .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero .headings-form-container {
+        flex-direction: row;
+        /* gap: 180px; */
+        /* height: 100%; */
+        position: relative;
+        transform: none;
+        left: 0;
+        padding: 0;
+        top: 0;
+    }
+
+    .consultation-form select {
+        font-size: 12px;
+        width: 50px;
+        padding: 6px;
+        background: url(../img/arrow.svg) no-repeat 85% 50% / 10px 10px, rgba(0, 0, 0, 0.25);
+    }
+
+    .hero .consultation-form .inputs input, .hero .consultation-form .inputs .form-comment {
+        font-size: 6px;
+        padding: 8px;
+    }
+    /* Car view */
+    .car-view .car-name{
+        font-size: 40px;    
+        /* line-height: 53px; */
+    }
+    .car-view .car-name .model-year{
+        font-size: 20px;
+    }
+    .car-view .car-price {
+        font-size: 32px;
+        line-height: 43px;
+    }
+    .car-view-stats{
+        width: 318px;
+        min-width: 318px;
+        gap: 6px;
+    }
+    .car-view .car-mileage {
+        font-size: 16.5px;
+        line-height: 22px;
+    }
+    .car-view .desc-categories-list .category-header {
+        font-size: 8px;
+        line-height: 12px;
+    }
+    .car-view .category-desc-list {
+        font-size: 8px;
+        line-height: 11px;
+    }
+    .car-view .desc-additional-list{
+        padding: 11px;
+        gap: 3px;
+        font-size: 6.5px;
+        line-height: 9px;
+    }
+    .controls .left, .controls .right{
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+    .controls img{
+        width: 10px;
+        height: 18px;
+    }
+    .car-view .main-img-container {
+        height: 174px;
+    }
+    .car-view .gallery {
+        position: relative;
+        height: 35px;
+    }
+    .car-view .gallery-list img{
+        width: 62px;
+        height: 35px;
+        object-fit: cover;
+    }
+    .car-view .stats-list .stat {
+        padding: 5px 4px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .car-view .info, .car-view .call {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 11px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        border-radius: 1px;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: var(--text-color);
+    }
+    .gallery-and-stats .gallery .controls img{
+        width: 6px;
+        height: 12px;
+    }
+   
+    /* Latest news */
+    .latest-news .piece-of-news .news-heading {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .latest-news .piece-of-news .news-heading-text {
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    .latest-news .piece-of-news .additional-text {
+        font-size: 12.5px;
+    }
+
+    .latest-news .piece-of-news {
+        height: 288px;
+        padding: 38px 30px;
+    }
+
+    .latest-news .piece-of-news .show-more {
+        font-size: 10.94px;
+        font-weight: 400;
+        line-height: 14.4px;
+        letter-spacing: 0.02em;
+        padding: 15px 50px;
+        width: auto;
+
+    }
+
+    .latest-news .scroll-menu {
+        gap: 10px;
+        padding: 5px 20px;
+    }
+
+    .latest-news .scroll-link.selected {
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 100%;
+    }
+
+    .latest-news .scroll-link {
+        width: 6px;
+        height: 6px;
+    }
+
+    .latest-news .scroll:first-child .scroll-link,
+    .latest-news .scroll:last-child .scroll-link {
+        width: 4px;
+        height: 4px;
+    }
+
+    .latest-news-list {
+        display: flex;
+        flex-direction: row;
+        overflow-x: visible;
+        gap: 13px;
+        width: max-content;
+    }
+
+    .latest-news .container {
+        display: flex;
+        align-items: flex-start;
+        gap: 18px;
+        flex-direction: column;
+    }
+
+    .latest-news .headings-container {
+        gap: 10px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    .latest-news-list .proposition {
+        width: 317px;
+        height: 374px;
+        border: 0.5px solid var(--stroke-color-main);
+        position: relative;
+    }
+
+    .latest-news-list .proposition .proposition-container {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .latest-news-list .proposition .more-info {
+        width: 100%;
+        padding: 14px;
+        text-align: center;
+        color: var(--text-color);
+        background-color: var(--accent-color);
+
+
+    }
+
+    .latest-news-list .proposition .proposition-heading {
+        color: var(--text-color);
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28.85px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+    .latest-news-list .proposition::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/proposition-background.jpg);
+        background-size: cover;
+        opacity: 0.36;
+        z-index: -1;
+    }
+
+    .latest-news-list .proposition-heading-container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 25px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .latest-news-list .proposition .skyline-logo {
+        width: 74px;
+        height: 25px;
+    }
+    .proposition-desc-list::-webkit-scrollbar{
+        display: none;
+    }
+    .proposition-desc-list {
+        display: flex;
+        flex-direction: column !important;
+        gap: 8px;
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18.98px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+    .best-offers .container {
+        margin-top: 40px;
+    }
+    /* Scroll menu */
+    .scroll-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .scroll {
+        flex-shrink: 0;
+    }
+
+    .scroll-link {
+        display: block;
+        width: 8px;
+        height: 8px;
+        background: rgba(217, 217, 217, 0.82);
+    }
+
+    .scroll:first-child .scroll-link,
+    .scroll:last-child .scroll-link {
+        background: rgba(217, 217, 217, 0.35);
+        width: 6px;
+        height: 6px;
+    }
+
+    .scroll-link.selected {
+        background: var(--accent-color) !important;
+        width: 12px !important;
+        height: 12px !important;
+        border-radius: 1px;
+    }
+
+    .scroll-menu::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Auto order */
+    .auto-order {
+        display: none;
+    }
+
+    /* Offers */
+    .offers-heading {
+        margin-top: 32px;
+        gap: 20px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .offers-heading .headings-container {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .marketplace .offer {
+        width: 18%;
+        padding: 3px 5px;
+    }
+
+    .offer img {
+        height: 60px;
+    }
+
+    .offer-name-img {
+        gap: 7px;
+    }
+    .offer .stat-row {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .offer .info {
+        font-size: 7px;
+        padding: 5px 0;
+        line-height: 10px;
+    }
+
+    .offer-list {
+        gap: 3rem;
+    }
+
+    .offer .stat-block {
+        font-size: 6px;
+        line-height: 9.5px;
+    }
+
+    /* Why us */
+    .why-us .advantage-desc {
+        font-size: 5px;
+        line-height: 7px;
+    }
+
+    .why-us .goal {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    /* Clients */
+    .clients .reviews-gallery {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .clients .review-button {
+        font-size: 11px;
+        line-height: 15px;
+        padding: 15px 35px;
+    }
+
+    /* About us */
+    .about-us-text {
+        font-size: 15px;
+        line-height: 20px;
+        font-family: Ruberoid;
+
+    }
+
+    .about-us::before {
+        width: 467px;
+        height: 467px;
+        bottom: 300px;
+        left: -100px;
+        z-index: -1;
+    }
+
+    .about-us .sub-heading-text {
+        line-height: 26px;
+    }
+
+    /* Feedback */
+    .feedback {
+        height: auto;
+    }
+
+    .feedback .sub-heading {
+        font-weight: 400;
+        line-height: 36.72px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+    .feedback .form-text-container {
+        padding-top: 0;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .feedback .icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .feedback .contact {
+        width: 100%;
+    }
+
+    .feedback .sub-heading-text {
+        width: 100%;
+        text-align: left;
+    }
+
+    .feedback .consultation-form {
+        width: 100%;
+    }
+
+    .feedback .consultation-form select {
+        width: 70px;
+    }
+
+    .feedback .background-logo img {
+        position: absolute;
+        z-index: -1;
+        width: 151px;
+        height: 151px;
+        right: 0;
+        bottom: 70%;
+        opacity: 0.1;
+    }
+
+    .feedback::before {
+        display: none;
+    }
+
+    .feedback .contact-desc {
+        font-size: 18.5px;
+    }
+
+    /* Light line */
+    .light-line {
+        width: 100%;
+        height: 4px;
+        filter: blur(50px);
+    }
+
+    .light-line line {
+        stroke: var(--accent-color);
+        stroke-width: 4.4px;
+    }
+}
+
+/* Hero cars and feedback fix */
+@media screen and (max-width: 670px) {
+
+    /* Feedback */
+    .feedback .contact-desc {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .feedback .contact-link {
+        gap: 8px;
+    }
+
+    /* Breadcrumbs */
+    .breadcrumbs {
+        font-size: 10px;
+    }
+
+    .breadcrumbs .back-button::before {
+        width: 8px;
+        height: 16px;
+    }
+
+    /* Hero */
+    .hero .heading {
+        font-size: 24px;
+    }
+
+
+}
+
+/* Mobile L */
+@media screen and (max-width: 500px) {
+    .language-select .selected-option .country-name, .option.language {
+        line-height: 13px;
+        font-size: 10px;
+    }
+    .header .container{
+        padding: 4px;
+    }
+
+    /* Hero */
+    .hero .background::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(224, 129, 129, 0.12);
+        backdrop-filter: blur(9.7px);
+    }
+    .hero .background img {
+        opacity: 0.17;
+    }
+    .grid img.mobile{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+    .grid img{
+        display: none;
+    }
+
+
+    .language-select{
+        width: 78px;
+    }    
+    .language-select .country-name, .option.language{
+            font-size: 10px;
+
+            line-height: 14px;
+    }
+    .header .selected-option{
+        border: 0 !important;
+    }
+    .header-list li:nth-child(2){
+        display: none;
+    }
+    /* Car view */
+        .car-view {
+            overflow: visible;
+        }
+    
+        .car-view .container {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+    
+        .car-view-offer.offer {
+            flex-direction: column;
+            width: 100vw;
+        }
+    
+        .car-view-offer.offer .offer-name-img {
+            gap: 10px;
+        }
+    
+        .car-view-offer.offer .stat-row {
+            justify-content: space-evenly;
+        }
+    
+        .car-view-offer.offer .stat-category {
+            line-height: 22.59px;
+            letter-spacing: 0.02em;
+            text-align: center;
+        }
+    
+        .car-view-offer.offer .stat-value {
+            font-size: 14px;
+            line-height: 18.42px;
+            letter-spacing: 0.02em;
+            text-align: center;
+    
+        }
+    
+        .car-view-offer.offer .stat-row,
+        .car-view-offer.offer .price,
+        .car-view-offer.offer .info,
+        .car-view-offer.offer .apply {
+            margin-right: 10px;
+            margin-left: 10px;
+            width: auto;
+        }
+    
+        .car-view-offer.offer .offer-name {
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    
+        .car-view-offer.offer .price p:first-child {
+            display: none;
+        }
+    
+        .car-view-offer.offer .price {
+            justify-content: center;
+            margin-top: 20px;
+        }
+    
+        .car-view-offer.offer .info {
+            font-size: 20px;
+            padding-top: 12.5px;
+            padding-bottom: 12.5px;
+
+        }
+        
+    
+    
+    
+        .car-view .desc-additional-list.mobile {
+            display: flex;
+            gap: 16px;
+            font-weight: 600;
+        }
+    
+        /* Similar offers */
+        .similar-offers {
+            margin-top: 25px;
+            overflow: visible;
+        }
+    
+        .similar-offers .container {
+            display: flex;
+            gap: 25px;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .similar-offers .offer-list {
+            width: 100vw;
+        }
+    
+        .similar-offers .offer .stat-category,
+        .similar-offers .offer .price {
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 22.59px;
+            letter-spacing: 0.02em;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+    
+        }
+    
+        .similar-offers .offer .price {
+            flex-direction: column;
+            margin: 0;
+        }
+    
+        .similar-offers .stat-row {
+            justify-content: space-evenly;
+        }
+    
+        .similar-offers .stat-row:last-child {
+            border-bottom: 0;
+        }
+    
+        .similar-offers .offer .price .price-amount,
+        .similar-offers .offer .stat-value {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18.61px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+    
+        }
+    
+        .similar-offers .offer-name {
+            font-family: Ruberoid;
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 34.1px;
+            letter-spacing: -0.01em;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+    
+        }
+    
+        .similar-offers .offer-name-img {
+            border-bottom: 1px solid var(--stroke-color-main);
+        }
+    
+        .similar-offers .show-more {
+            width: 100%;
+            font-size: 14px;
+            margin: 0;
+            font-weight: 400;
+            line-height: 20.44px;
+            letter-spacing: 0.02em;
+            border: 1px solid var(--accent-color);
+    
+        }
+    
+    /* Filter */
+    .marketplace .filter {
+        min-width: 0;
+        width: inherit;
+    }
+
+    .marketplace .filter-settings {
+        border: 0;
+    }
+
+    .marketplace .filter-settings .category-top {
+        border-bottom: 0 !important;
+    }
+
+    .marketplace .filter-category {
+        border-bottom: 0;
+    }
+
+    .marketplace input[type="search"] {
+        background: url(../img/search-icon.svg) no-repeat 3% 50%/16px 16px;
+        font-size: 10px;
+    }
+
+    .brand .brand-checkbox:checked~.brand-name {
+        color: var(--accent-color);
+    }
+
+    .filter .filter-img {
+        height: 83px;
+    }
+    .brand-list {
+        justify-content: space-between;
+    }
+
+    .brand-list .brand {
+        color: var(--text-color);
+        font-weight: 400;
+        font-size: 13px;
+    }
+    .marketplace .page-menu.mobile {
+        justify-content: center;
+    }
+    .category-content .price-range-boxes input {
+        padding: 8px 10px;
+        font-size: 10px;
+    }
+    .marketplace .sub-heading-text {
+        font-size: 16px !important;
+    }
+    .marketplace .page-menu .page{
+        font-size: 16px;
+        line-height: 21px;
+        padding: 14px 18px;  
+    }
+    .marketplace .marketplace-sort-container, .marketplace .marketplace-sort {
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .marketplace .marketplace-sort{
+        width: 100%;
+    }
+    .slider-track {
+        width: 100%;
+        height: 3px;
+        margin: auto;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+      input[type="range"]::-webkit-slider-runnable-track {
+        -webkit-appearance: none;
+        height: 4px;
+      }
+      input[type="range"]::-moz-range-track {
+        -moz-appearance: none;
+        height: 4px;
+      }
+      input[type="range"]::-ms-track {
+        appearance: none;
+        height: 4px;
+      }
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 12px;
+        width: 12px;
+        border: 2px solid var(--range-color);
+        background-color: var(--text-color);
+        cursor: pointer;
+        margin-top: -4.5    px;
+        pointer-events: auto;
+        border-radius: 2px;
+      }
+      input[type="range"]::-moz-range-thumb {
+        -webkit-appearance: none;
+        height: 7px;
+        width: 7px;
+        cursor: pointer;
+        border-radius: 2px;
+        border: 1.5px solid var(--range-color);
+        background-color: var(--text-color);
+        pointer-events: auto;
+        border: none;
+      }
+      input[type="range"]::-ms-thumb {
+        appearance: none;
+        height: 7px;
+        width: 7px;
+        cursor: pointer;
+        border-radius: 2px;
+        background-color: var(--range-color);
+        pointer-events: auto;
+      }
+    
+    /* Marketplace */
+    .marketplace {
+        overflow: visible;
+    }
+
+    .marketplace .container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Marketplace mobile block */
+    .marketplace .mobile-block {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .marketplace .mobile-block .headings-container {
+        gap: 10px;
+    }
+
+    .marketplace .mobile-block .headings-container .sub-heading {
+        font-size: 27px !important;
+        font-weight: 600;
+        line-height: 37.02px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+
+
+    .marketplace-sort-container.mobile {
+        border: 0;
+        color: var(--text-color);
+    }
+
+    .marketplace-sort-container.mobile .marketplace-sort {
+        color: var(--accent-color);
+        background: url(../img/arrow.svg) no-repeat 98% 50% / 14px 14px;
+    }
+
+    .filter .category-top p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .filter .filter-categories-list.closed {
+        height: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .filter .category-top img {
+        width: 16px;
+        height: 18px;
+    }
+    .marketplace .filter-top img:first-child {
+        width: 24px;
+        height: 24px;
+    }
+    .filter .filter-top p {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .filter .category-content input[type="search"] {
+        font-size: 10px;
+        line-height: 13px;
+        padding: 10px 30px;
+    }
+    .marketplace .right-block-top .headings-container {
+        display: none;
+    }
+    .brand-list .brand input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .marketplace-sort-container {
+        display: none;
+    }
+
+    .marketplace .page-menu {
+        display: none;
+    }
+    /* Car view */
+    .car-view .car-name{
+        font-size: 53px;    
+        line-height: 70px;
+    }
+    .car-view-stats{
+        width: 422px;
+        min-width: 422px;
+    }
+    .car-view .car-mileage {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .car-view .desc-categories-list .category-header {
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .car-view .category-desc-list {
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .car-view .desc-additional-list{
+        padding: 14px;
+        gap: 4px;
+        font-size: 9px;
+        line-height: 12px;
+    }
+    .controls .left, .controls .right{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .controls img{
+        width: 12px;
+        height: 21px;
+    }
+    .car-view .main-img-container {
+        height: 231px;
+    }
+    .car-view .gallery {
+        position: relative;
+        height: 48px;
+    }
+    .car-view .gallery-list img{
+        width: 83px;
+        height: 48px;
+        object-fit: cover;
+    }
+    .car-view .stats-list .stat {
+        width: 100%;
+        padding: 6px 5.5px;
+        font-size: 14px;
+        line-height: 19px;
+    }   
+    /* Breadcrumbs */
+    .breadcrumbs .container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .breadcrumbs {
+        margin-top: 70px;
+    }
+
+    .breadcrumbs .back-button {
+        border: 0;
+        padding: 10px 10px 10px 0;
+        display: none;
+    }
+
+    .breadcrumbs .back-button.mobile {
+        display: inherit;
+    }
+    .offers-heading .headings-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .sub-heading {
+        font-size: 29px !important;
+        text-align: center;
+    }
+
+    .sub-heading-text {
+        font-size: 16px !important;
+        text-align: center;
+    }
+
+    .headings-container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .why-us.marketplace .mobile {
+        display: inherit !important;
+    }
+
+    .dotted-line {
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+
+    .dotted-line line {
+        stroke: rgba(106, 104, 125, 1);
+    }
+
+    .dotted-line-container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    /* Car view */
+
+    .car-view .car-view-stats {
+        display: none;
+    }
+
+    .car-view .car-view-desc {
+        display: none;
+    }
+
+    /* Menu */
+    .menu {
+        background-color: rgba(22, 31, 54, 0.7);
+        margin-top: 64px;
+        width: 98%;
+        gap: 25px;
+        position: fixed;
+        padding-bottom: 64px;
+        height: 100vh;
+        /* overflow-y: scroll; */
+    }
+
+    .menu .logo {
+        display: none;
+    }
+
+    .menu .logo.mobile {
+        display: block;
+        width: 150px;
+    }
+
+    .menu .social-list {
+        display: none;
+    }
+
+    .menu .social-list.mobile {
+        display: flex;
+    }
+
+    .menu .social-list.mobile .social-media a {
+        width: 45px;
+        height: 45px;
+    }
+
+    .menu .nav-menu a {
+        font-family: Ruberoid;
+        font-size: 32px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 41.97px;
+        letter-spacing: -0.01em;
+    }
+
+    .menu .nav-menu .nav-element {
+        text-align: center;
+    }
+
+    .menu .nav-menu::after {
+        content: "";
+        width: 300px;
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        height: 1px;
+        background-color: var(--text-color);
+
+
+    }
+
+    .mobile {
+        display: inherit !important;
+    }
+
+    .container {
+        max-width: 98%;
+        width: 98%;
+    }
+
+    /* Header */
+    .header {
+        background-color: rgba(22, 31, 54, 0.94);
+        height: 44px;
+        padding: 5px;
+        max-width: 100%;
+        width: 98%;
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .header-list {
+        height: 100%;
+
+    }
+
+    .header .skyline-motors-logo {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .nav-bar {
+        display: none;
+    }
+
+    .header button,
+    .header select {
+        border: 0;
+        width: 77px;
+        height: 100%;
+        font-size: 10px;
+    }
+
+    .header button img {
+        width: 25px;
+        height: 22px;
+    }
+
+    .header select {
+        appearance: none;
+        width: 78px;
+        padding: 0;
+        padding-left: 6px;
+        background: url(../img/arrow.svg) no-repeat 80% 50%/12px 12px;
+    }
+
+    /* Best offers */
+
+    .best-offers .dotted-line-container {
+        display: none;
+    }
+
+    .best-offers.car-view-offers {
+        display: none;
+    }
+
+    /* Marketplace */
+    .marketplace .offer-list {
+        padding-bottom: 34px;
+        position: relative;
+    }
+
+    .marketplace .offer-list .offer {
+        width: 100%;
+    }
+
+    .marketplace .offer-list {
+        /* width: 100vw; */
+        width: 100%;
+    }
+
+    .marketplace .offer-list::after {
+        content: "";
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        background-color: rgba(98, 98, 98, 0.15);
+    }
+
+    .marketplace .offer-name {
+        font-size: 26px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .marketplace .offer .price p:first-child {
+        display: none;
+    }
+
+    .marketplace .offer .price {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .marketplace .offer .price-amount {
+        font-size: 25px;
+    }
+
+    .marketplace .offer .info,
+    .marketplace .offer .apply {
+        font-size: 15px;
+    }
+
+    .marketplace .stat-row {
+        justify-content: space-around;
+    }
+
+    .marketplace .stat-row,
+    .marketplace .offer .price,
+    .marketplace .info,
+    .marketplace .apply {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .marketplace .offer .apply {
+        display: inherit;
+        margin-top: 12px;
+    }
+
+    .car-view-offer.offer .apply {
+        font-size: 20px;
+        margin-top: 12px;
+        font-weight: 400;
+        line-height: 13.89px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: white;
+        display: flex;
+        border: 1px solid var(--accent-color);
+        border-radius: 1px;
+        justify-content: center;
+        align-items: center;
+        padding: 13px 0;
+    }
+    /* Car view */
+    .car-view .container {
+        flex-direction: column;
+    }
+
+    .car-view-stats {
+        width: 100%;
+    }
+
+    .car-view .desc-additional-list {
+        width: 100%;
+    }
+
+    /* Filter */
+    .filter .filter-img {
+        display: none;
+    }
+
+    /* Hero */
+    .hero .cars,
+    .hero .backlight {
+        bottom: 0;
+    }
+    .hero .cars{
+        width: 100%;    
+    }
+
+    .hero .headings-container {
+        gap: 2px;
+        max-width: 70%;
+    }
+
+    .hero .heading {
+        font-size: 30px;
+    }
+
+    .hero .consultation-form .inputs input {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .consultation-form .inputs .consultation-submit-button {
+        font-size: 13px !important;
+        line-height: 17px;
+
+    }
+
+    .hero .headings-container {
+        padding-left: 15px;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        justify-content: flex-end;
+        /* margin-bottom: 200px; */
+        align-items: flex-start;
+    }
+
+    .hero .headings-form-container {
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 60px;
+    }
+
+    .hero .consultation-form {
+        width: 100% !important;
+        backdrop-filter: blur(5.7px);
+    }
+
+    .consultation-form select {
+        font-size: 14px;
+        width: 50px;
+        background: url(../img/arrow.svg) no-repeat 80% 50%/8px 8px, rgba(0, 0, 0, 0.25);
+        border: 1px solid var(--input-color);
+        margin: 4px;
+    }
+
+    .hero .consultation-form .consultation-form-text {
+        font-size: 16px;
+    }
+
+    .show-more {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Latest news */
+    .latest-news .showcase {
+        display: none;
+    }
+    .latest-news-list .proposition{
+        width: 100%;
+    }
+    .latest-news-list.mobile{
+        overflow-y: scroll;
+        width: calc(100vw - 24px);
+    }
+    .latest-news-list .proposition .proposition-container{
+        width: calc(100vw - 15px * 2);
+    }
+    .latest-news .scroll-menu.mobile {
+        position: relative;
+        background-color: transparent;
+    }
+
+    .latest-news .scroll-menu.mobile a {
+        border-radius: inherit !important;
+    }
+
+    /* Offers list */
+    .offer-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .offer {
+        width: 100%;
+        padding: 0;
+        border: 0;
+    }
+    .offer .info {
+        font-size: 15px;
+        padding: 12.5px 0;
+        line-height: 1.02;
+        background-color: #FF6565;
+    }
+    .offer-name-img {
+        gap: 10px;
+    }
+
+    .offer .offer-name {
+        font-size: 26px;
+        line-height: 34px;
+        margin-bottom: 6px;
+    }
+
+    .offer .stat-row {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .offer img {
+        height: 200px;
+    }
+
+    .offer .stat-block {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+    .offer .price {
+        font-size: 17px;
+        margin-bottom: 30px;
+        margin-top: 23px;
+    }
+
+    .offer .price .price-amount {
+        font-size: 25px;
+    }
+
+    .marketplace .offer .info {
+        font-size: 15px;
+        padding: 12px 0;
+        line-height: 20px;
+        background-color: var(--accent-color);
+    }
+
+    .best-offers .container {
+        gap: 20px;
+    }
+
+    .best-offers .show-more {
+        font-size: 14px;
+        line-height: 18.5px;
+        margin: 0;
+    }
+
+    .marketplace .show-more.mobile {
+        margin-bottom: 20px;
+    }
+    .marketplace .stat-block .stat-value {
+        font-size: 14px;
+    }
+    /* Why us */
+    .why-us.marketplace .headings-container {
+        margin-top: 0;
+    }
+
+    .why-us .container {
+        gap: 32px;
+    }
+
+    .why-us .light-backdrop {
+        display: none;
+    }
+
+    .why-us .sub-heading {
+        display: none;
+    }
+
+    .why-us .sub-heading.mobile {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        color: var(--additional-color);
+    }
+
+    .why-us .goal {
+        display: none;
+    }
+
+    .why-us .advantages {
+        display: none;
+    }
+
+    .why-us .advantages.mobile {
+        display: flex !important;
+        padding: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        background-image: none;
+        gap: 20px;
+    }
+
+    .why-us .advantage-icon {
+        width: auto;
+        height: auto;
+    }
+    .why-us .advantages.mobile .advantages-list::-webkit-scrollbar{
+        display: none;
+    }
+    .why-us .advantages.mobile .advantages-list {
+        padding: 0;
+        overflow-x: scroll;
+        width: 100%;
+        height: auto;
+    }
+
+    .why-us .advantages.mobile .advantage {
+        width: 100%;
+        height: 250px;
+        padding: 30px 18px;
+        position: relative;
+        flex-shrink: 0;
+    }
+
+    .why-us .advantages.mobile .advantage::before {
+        content: "";
+        background-image: url(../img/advantage-mobile-bg.svg);
+        width: 100%;
+        top: 0;
+        height: 100%;
+        background-size: cover;
+        position: absolute;
+        z-index: -2;
+    }
+
+    .why-us .advantages.mobile .advantage-upper {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .why-us .advantages.mobile .advantage-desc {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20.98px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: var(--text-color);
+
+    }
+
+    .why-us .advantages.mobile .advantage-category {
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 34.1px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: var(--accent-color);
+
+    }
+
+    /* Clients */
+    .clients .review.text::after {
+        opacity: 1;
+    }
+
+    .clients .review {
+        position: relative;
+        height: 381px;
+    }
+
+    .clients .review .inner-review-container {
+        width: 276px;
+        background-color: rgba(22, 31, 54, 0.58);
+        backdrop-filter: blur(5.7px);
+        /* box-shadow: 0px 7px 4px 0x rgba(0, 0, 0, 0.25); */
+        position: absolute;
+        bottom: -10px;
+        /* left: -10px; */
+        z-index: 3;
+        padding: 13px;
+        height: 122px;
+        transition: 0.3s;
+        transform: rotateY(0);
+        gap: 6px !important;
+    }
+
+    .clients .review::after {
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+    }
+
+    .review .author-avatar {
+        width: 42px;
+        height: 42px;
+    }
+
+    .review .author-name {
+        color: var(--aditional-color);
+    }
+
+    .review-author-container {
+        gap: 20px;
+    }
+
+    .review .author-name,
+    .review .car-name {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .clients .inner-review-container .review-desc {
+        display: none;
+    }
+
+    .clients .inner-review-container .review-desc.mobile {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        height: 40px;
+        display: block;
+        width: 200px;
+        color: var(--additional-color);
+    }
+
+    .clients .show-more {
+        border: 0.5px solid var(--additional-color);
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin: 0;
+        background-color: rgba(22, 31, 54, 1);
+        width: 45px;
+        height: 16px;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .clients .show-more img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .clients .review-button {
+        display: none;
+    }
+    .clients .reviews-gallery::-webkit-scrollbar{
+        display: none;
+        justify-content: start;
+    }
+    .clients .reviews-gallery {
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: visible;
+        justify-content: start;
+        height: 430px;
+    }
+
+    .clients .review {
+        min-width: calc(100vw - 15px*2);
+    }
+
+    .clients .headings-container {
+        gap: 0px;
+    }
+
+    .clients .sub-heading {
+        text-align: center;
+    }
+
+    .clients .container {
+        gap: 40px;
+    }
+
+    /* About us */
+    .about-us .light-backdrop {
+        display: none;
+    }
+
+    .about-us::before {
+        content: none;
+    }
+
+    .about-us .logo {
+        width: 151px;
+        height: 151px;
+        position: relative;
+        filter: drop-shadow(0px 0px 20px var(--accent-color));
+    }
+
+    .about-us .sub-heading-text {
+        line-height: 21px;
+        text-align: center;
+        white-space: inherit;
+    }
+
+    .about-us .headings-container {
+        gap: 10px;
+    }
+
+    .about-us .container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-us .about-us-text {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15.74px;
+        letter-spacing: -0.01em;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin-bottom: 0;
+    }
+}
+
+
+/* Hero fix height and width mobile */
+/* @media screen and (max-width: 860px) and (max-height: 1000px) {
+    .hero .cars, .hero .backlight {
+        bottom: 30vh;
+    } 
+} */
+
+@media screen and (max-height: 1200px) {
+    .menu {
+        gap: 50px;
+    }
+
+    .menu .logo {
+        width: 350px;
+    }
+}
+
+
+@media screen and (max-height: 1100px) {
+    .menu .logo {
+        width: 200px;
+    }
+
+    .menu .nav-menu a {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .menu .nav-menu {
+        gap: 8px;
+    }
+
+    .menu .social-list a img {
+        aspect-ratio: 7 / 6;
+    }
+
+    .menu .social-list a {
+        width: 70px;
+        height: 70px;
+    }
+
+}
+/* Menu fix mobile */
+@media screen and (max-width: 860px) and (max-height: 750px) {
+    .menu {
+        padding-top: 20px;
+        gap: 20px;
+    }
+
+    .menu .nav-menu::after {
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 860px) and (max-height: 650px) {
+    .menu .logo {
+        width: 200px;
+    }
+
+    .menu .nav-menu a {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .menu .nav-menu {
+        gap: 8px;
+    }
+
+    .menu .social-list a img {
+        aspect-ratio: 7 / 6;
+    }
+
+    .menu .social-list a {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 860px) and (max-height: 550px) {
+    .menu {
+        padding-top: 10px;
+        gap: 10px;
+    }
+
+    .menu .nav-menu::after {
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .menu .logo.mobile {
+        width: 100px;
+    }
+
+    .menu .social-list.mobile {
+        gap: 10px;
+    }
+
+    .menu .nav-menu a {
+        font-size: 20px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 860px) and (max-height: 450px) {
+    .menu {
+        padding-top: 5px;
+        gap: 5px;
+    }
+
+    .menu .nav-menu::after {
+        margin-top: 10px;
+        margin-bottom: 3px;
+    }
+
+    .menu .logo.mobile {
+        width: 80px;
+    }
+
+    .menu .social-list.mobile {
+        gap: 8px;
+    }
+
+    .menu .nav-menu a {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}

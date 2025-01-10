@@ -1,0 +1,11 @@
+:root{
+    --accent-color: #FF6565;
+    --secondary-accent-color: #FC7B7B;
+    --additional-color: #F7F0D8;
+    --background-color: #10002A;
+    --footer-color: linear-gradient(0deg, rgba(24,0,56,1) 0%, rgba(18,10,27,1) 100%);
+    --stroke-color-main: #4E3C59;
+    --input-color: #626262;
+    --text-color: white;
+    --range-color: rgba(102, 53, 241, 1);
+}

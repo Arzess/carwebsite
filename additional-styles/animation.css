@@ -1,0 +1,330 @@
+@import url(colors.css);
+
+.selected-option{
+    transition: 0.2s;
+}
+.selected-option:hover{
+    border-color: var(--accent-color);
+}
+
+
+.scroll-menu a {
+    transition: all 0.2s ease-in-out;
+}
+.scroll-menu a:hover {
+    background-color: var(--accent-color) !important;
+}
+/* Menu */
+.header .menu-button.opened g path:first-child {
+    transform: translateY(6px) translateX(-6px) rotate(45deg);
+    -webkit-transform: translateY(6px) translateX(-6px) rotate(45deg);
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.header .menu-button.opened g path:nth-child(2) {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+/* Header */
+.header .nav-bar .nav-page a {
+    transition: color 0.2s ease-in-out;
+}
+.header .nav-bar .nav-page a:hover {
+    color: var(--accent-color);
+}
+
+.header button, .header select {
+    transition: border 0.3s ease-in-out;
+}
+
+.header select:hover, .header button:hover {
+    border: 1px solid var(--accent-color);
+}
+select:active, select:focus-visible {
+    outline: none;
+}
+
+/* Menu */
+.menu .nav-menu a {
+    transition: color 0.2s ease-in-out;
+}
+.menu .social-media-link, footer .social-media-link {
+    transition: box-shadow 0.2s ease-in-out;
+}
+.menu .social-media-link:hover, footer .social-media-link:hover {
+    box-shadow: 0px 0px 10px 4px rgba(78, 60, 89, 1);
+}
+.menu .nav-menu a:hover {
+    color: var(--accent-color);
+}
+
+/* Breadcrumbs */
+.breadcrumbs .back-button {
+    transition: box-shadow 0.3s ease-in-out;
+}
+.breadcrumbs .back-button:hover {
+    box-shadow: 0 0 10px 3px var(--accent-color);
+}
+.breadcrumbs .page {
+    transition: color 0.2s ease-in-out;
+}
+.breadcrumbs .page:hover {
+    color: var(--accent-color);
+}
+
+/* Marketplace */
+.controls .left, .controls .right {
+    transition: 0.3s ease-in-out;
+}
+.controls .left:hover, .controls .right:hover {
+    background-color: rgba(22, 31, 54, 0.6);
+}
+.offer.car-view-offer .offer-img {
+    transition: transform 0.3s ease-in-out;
+}
+.car-view-offer.offer .info {
+    transition: background-color 0.3s ease-in-out;
+}
+.car-view-offer.offer .info:hover {
+    background-color: var(--secondary-accent-color);
+}
+.car-view-offer.offer .apply.mobile {
+    transition: background-color 0.3s ease-in-out;
+}
+.car-view-offer.offer .apply.mobile:hover {
+    background-color: var(--accent-color);
+}
+.similar-offers .show-more {
+    transition: background-color 0.3s ease-in-out;
+}
+.similar-offers .show-more:hover {
+    background-color: var(--accent-color);
+}
+
+/* Filter */
+.filter-category {
+    transition: border 0.2s ease-in-out;
+}
+.filter-category input {
+    transition: border 0.2s ease-in-out;
+}
+.filter-category input:focus, .filter-category input:hover {
+    outline: none;
+    border: 1px solid var(--accent-color) !important;
+}
+.filter-category:hover {
+    border-bottom: 1px solid var(--accent-color);
+}
+.filter .brand-list .brand {
+    transition: color 0.3s ease-in-out;
+}
+.slider-container input:hover, .slider-container input:focus {
+    border: 0 !important;
+    outline: 0;
+}
+.filter .brand-list .brand:hover {
+    color: var(--accent-color);
+}
+.filter-category img[src="./img/arrow-up.svg"] {
+    transform: rotateX(180deg);
+    transition: transform 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out;
+}
+.filter-category.closed img[src="./img/arrow-up.svg"] {
+    transform: none;
+}
+.marketplace-sort-container {
+    transition: border 0.3s ease-in-out;
+}
+.marketplace-sort-container select:focus, .marketplace-sort-container select:hover {
+    box-shadow: none;
+}
+.marketplace-sort-container:hover {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+.marketplace-sort-container:hover select {
+    background: url(../img/arrow.svg) no-repeat 100% 50% / 16px 16px;
+}
+.page-menu li:hover {
+    background-color: var(--accent-color);
+}
+
+/* Similar Offers */
+.similar-offers .offer .offer-img {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Car View */
+.car-view .call, .car-view .info {
+    transition: background-color 0.3s ease-in-out;
+}
+.car-view .call:hover {
+    background-color: var(--accent-color);
+}
+.car-view .info:hover {
+    background-color: var(--secondary-accent-color);
+}
+.car-view .car-view-stats{
+    transition: 0.3s;
+}
+.car-view .car-view-stats.active{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+.car-view .car-view-stats.active .main-img-container{
+    width: 100%;
+    height: 100%;
+}
+
+/* Hero */
+.consultation-form .inputs input, .consultation-form select {
+    transition: border 0.3s ease-in-out;
+}
+.consultation-form select:hover {
+    border: 1px solid var(--accent-color);
+}
+.consultation-form .inputs input:hover, .consultation-form .inputs input[type="tel"]:hover {
+    border: 1px solid var(--accent-color);
+}
+.consultation-form .inputs input:focus, .consultation-form .inputs input[type="tel"]:focus {
+    outline: none;
+}
+.consultation-form .inputs .consultation-submit-button:hover {
+    color: var(--accent-color);
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+}
+
+/* Auto Order */
+.auto-order .controls a {
+    transition: box-shadow 0.3s ease-in-out;
+}
+.auto-order .controls a:hover {
+    box-shadow: 0 0 10px 1px var(--accent-color);
+}
+.auto-order .more-info {
+    transition: border 0.3s ease-in-out;
+}
+.auto-order .more-info:hover {
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+/* Latest News */
+.latest-news .piece-of-news .show-more:hover {
+    background-color: transparent;
+    color: var(--accent-color);
+}
+
+/* Offers */
+.offer .info {
+    transition: background-color 0.3s ease-in-out;
+}
+.offer .info:hover {
+    background-color: var(--accent-color);
+}
+.offer {
+    transition: transform 0.3s ease-in-out;
+}
+.offer:hover {
+    transform: translateY(-10px);
+    z-index: 10;
+}
+.best-offers .show-more {
+    transition: background-color 0.3s ease-in-out;
+}
+.best-offers .show-more:hover {
+    color: white;
+    background-color: var(--accent-color);
+}
+
+/* Clients */
+.clients .review-button {
+    transition: background-color 0.2s ease-in;
+}
+.clients .review-button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Why Us */
+.why-us .advantages .advantage {
+    transition: transform 0.2s ease-in-out;
+}
+.why-us .advantages .advantage:hover {
+    transform: rotate(2deg) scale(1.1) !important;
+    z-index: 9;
+    background-color: var(--background-color);
+}
+
+/* Flip Card */
+.clients .review .inner-review-container {
+    transform: rotateY(0);
+    transition: transform 0.6s;
+    -webkit-transition: transform 0.6s;
+}
+.clients .review:hover .inner-review-container {
+    transform: rotateY(0deg);
+
+}
+.clients .review:hover::after {
+    transform: rotateY(-180deg);
+    opacity: 0.2;
+}
+
+/* Feedback */
+.feedback .contact-link .contact-desc {
+    transition: color 0.3s ease-in-out;
+}
+.feedback .contact-link:hover .contact-desc {
+    color: var(--accent-color);
+}
+
+/* Footer */
+footer .info-list a {
+    transition: color 0.3s ease-in-out;
+}
+footer .info-list a:hover {
+    color: var(--accent-color);
+}
+
+@media screen and (max-width: 860px) {
+    .breadcrumbs .back-button:hover {
+        box-shadow: none;
+        color: var(--accent-color);
+    }
+    .offer.car-view-offer:hover {
+        box-shadow: none;
+        transform: none;
+    }
+    .offer.car-view-offer .offer-img:hover {
+        height: 300px;
+    }
+    .similar-offers .offer:hover {
+        box-shadow: none;
+    }
+    .similar-offers .offer:hover .offer-img {
+        height: 300px;
+    }
+}
+@media screen and (max-width: 500px){
+    .why-us .advantages .advantage:hover {
+        transform: none !important;
+    }
+    .offer:hover {
+        transform: none !important;
+    }
+    .clients .review:hover::after {
+        transform: none !important;
+        opacity: 0.5 !important;
+    }
+
+}
