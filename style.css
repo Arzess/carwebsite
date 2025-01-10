@@ -1286,7 +1286,7 @@ form .overlay .text-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 100%;
     gap: 10px;
 }
 form .overlay .text-container p:last-child{
