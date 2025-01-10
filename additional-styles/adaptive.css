@@ -120,7 +120,7 @@
 
     /* Hero section */
     .hero {
-        height: 100vh;
+        height: calc(100 * var(--real-vh));
     }
 
     /* Nav bar */
@@ -2722,6 +2722,10 @@
     }
     .consultation-form .inputs .form-comment{
         position: relative;
+        height: 40px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .consultation-form .inputs .form-comment::placeholder{
         position: absolute;

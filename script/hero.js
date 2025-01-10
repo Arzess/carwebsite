@@ -6,6 +6,16 @@ const heroForm = document.querySelector(".hero .consultation-form")
 const mobileNavBar = document.querySelector(".mobile-navbar")
 const navBarHeight = 120;
 const safeAreaBottom = parseInt(window.getComputedStyle(document.documentElement).getPropertyValue("--safe-area-inset-bottom")) || 0;
+
+const setRealVH = () => {
+    const vh = window.innerHeight * 0.01; // Calculate 1% of the viewport height
+    document.documentElement.style.setProperty('--real-vh', `${vh}px`);
+};
+
+
+
+
+
 const adjustHeroMobile = () => {
     if (window.innerWidth <= 500){
         heading.style.marginBottom = cars.clientHeight-30 + "px"; 
@@ -35,8 +45,12 @@ const adjustForm = () => {
 adjustHeroMobile()
 adjustCarsHeroMobile()
 adjustForm()
+setRealVH()
+
 window.addEventListener("resize", ()=>{
     adjustCarsHeroMobile();
     adjustHeroMobile();
     adjustForm();
+    setRealVH();
+
 })
