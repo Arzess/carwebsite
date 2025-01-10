@@ -42,10 +42,15 @@ const adjustForm = () => {
         heroForm.parentElement.style.marginBottom = 0;
     }
 }
-adjustHeroMobile()
-adjustCarsHeroMobile()
-adjustForm()
-setRealVH()
+
+
+document.addEventListener("DOMContentLoaded", ()=>{
+    adjustHeroMobile()
+    adjustCarsHeroMobile()
+    adjustForm()
+    setRealVH()
+});
+
 
 window.addEventListener("resize", ()=>{
     adjustCarsHeroMobile();

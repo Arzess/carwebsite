@@ -2722,13 +2722,11 @@
     }
     .consultation-form .inputs .form-comment{
         position: relative;
-        height: 40px !important;
+        height: 100% !important;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    .consultation-form .inputs .form-comment::placeholder{
-        vertical-align: middle;
     }
 
     .hero .headings-container {

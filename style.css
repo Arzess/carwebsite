@@ -2355,14 +2355,35 @@ margin-bottom: 100px;
 
 }
 .consultation-form .inputs input, .consultation-form .form-comment{
-   color: var(--input-color);
    background-color: rgba(0, 0, 0, 0.25);
+   color: var(--text-color);
    padding: 20px;
+   width: 100%;
    /* font-size: 28px; */
    border-radius: 3px;
    border: 1px solid var(--input-color);  
 }
+.consultation-form .comment-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.consultation-form .comment-container .placeholder{
+    font-size: 8.5px;
+    left: 8px;
+    color: var(--input-color);
+    pointer-events: none;
+    display: none;
+    position: absolute;
+}
+.consultation-form .comment-container .placeholder.shown{
+    display: flex;
+}
+.consultation-form .inputs input::placeholder{
+    color: var(--input-color);
+}
 .consultation-form input[type="tel"]{
+
     border-radius: 0;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
