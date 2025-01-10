@@ -2475,7 +2475,7 @@ margin-bottom: 100px;
     border: 0.7px var(--stroke-color-main);
 }
 .mobile-navbar.shown{
-    padding: 10px 40px;
+    padding: 10px calc(40px + env(safe-area-inset-bottom));
     height: auto;
 }
 .mobile-navbar-list{

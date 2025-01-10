@@ -2074,6 +2074,7 @@
         .similar-offers .offer .stat-category,
         .similar-offers .offer .price {
             font-size: 17px;
+            width: auto;
             font-weight: 400;
             line-height: 22.59px;
             letter-spacing: 0.02em;
