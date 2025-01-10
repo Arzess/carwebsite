@@ -1,21 +1,22 @@
 // Menu toggle logic
 const menuButton = document.querySelector(".header .menu-button");
 const menu = document.querySelector(".menu");
-let scrollY = 0;
 const toggleMenu = () => {
-  if (menu.classList.contains("closed")) {
-      scrollY = window.scrollY;
-      document.body.classList.add('menu-open');
-      document.body.style.top = `-${scrollY}px`;
-  } else {
-      document.body.classList.remove('menu-open');
-      document.body.style.top = '';
-      window.scrollTo(0, scrollY);
-  }
-
+  document.body.classList.toggle("steady");
   menuButton.classList.toggle("opened");
   menu.classList.toggle("closed");
 };
+document.body.addEventListener('wheel', (e) => {
+  if (document.body.classList.contains("steady")){
+    e.preventDefault();
+  }
+}, { passive: false });
+
+document.body.addEventListener('touchmove', (e) => {
+  if (document.body.classList.contains("steady")){
+    e.preventDefault();
+  }
+}, { passive: false });
 
 
 menuButton.addEventListener("click", toggleMenu);
