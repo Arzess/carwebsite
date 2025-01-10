@@ -1,3 +1,4 @@
+const mobileNavBar = document.querySelector(".mobile-navbar")
 window.addEventListener("scroll", ()=>{
     if (window.scrollY > 100){
         mobileNavBar.classList.add("shown")
