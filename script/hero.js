@@ -4,7 +4,7 @@ const cars = document.querySelector(".hero .cars img")
 const backlight = document.querySelector(".hero .backlight")
 const heroForm = document.querySelector(".hero .consultation-form")
 const mobileNavBar = document.querySelector(".mobile-navbar")
-const navBarHeight = 80;
+const navBarHeight = 120;
 
 const adjustHeroMobile = () => {
     if (window.innerWidth <= 500){

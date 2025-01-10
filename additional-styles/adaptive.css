@@ -1984,6 +1984,13 @@
             flex-direction: column;
             width: 100vw;
         }
+        .car-view-offer.offer .gallery-list::-webkit-scrollbar{
+            display: none;
+        }
+        .car-view-offer.offer .gallery-list img{
+            width: 100vw;
+            height: 225px;
+        }
     
         .car-view-offer.offer .offer-name-img {
             gap: 10px;
@@ -2402,7 +2409,8 @@
     .offers-heading .headings-container {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        /* align-items: center; */
     }
 
     body {
@@ -2417,15 +2425,15 @@
 
     .sub-heading-text {
         font-size: 16px !important;
-        text-align: center;
+        text-align: start;
     }
 
     .headings-container {
         display: flex;
         justify-content: start;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
-        gap: 15px;
+        gap: 15px;  
     }
 
     .why-us.marketplace .mobile {
@@ -2463,8 +2471,9 @@
         width: 98%;
         gap: 25px;
         position: fixed;
-        padding-bottom: 64px;
-        height: 100vh;
+        /* padding-bottom: 64px; */
+        padding: 0;
+        height: calc(100vh - 64px);
         /* overflow-y: scroll; */
     }
 
@@ -2710,6 +2719,14 @@
         line-height: 17px;
 
     }
+    .consultation-form .inputs .form-comment{
+        position: relative;
+    }
+    .consultation-form .inputs .form-comment::placeholder{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 
     .hero .headings-container {
         padding-left: 15px;
@@ -2868,7 +2885,7 @@
     .why-us .sub-heading.mobile {
         display: flex;
         flex-direction: row;
-        text-align: center;
+        text-align: start;
         color: var(--additional-color);
     }
 
@@ -3037,7 +3054,11 @@
     }
 
     .clients .review-button {
-        display: none;
+        width: 100%;
+        border-width: 3px;
+        font-size: 14px;
+        line-height: 18.5px;
+        margin: 0;
     }
     .clients .reviews-gallery::-webkit-scrollbar{
         display: none;
@@ -3060,7 +3081,7 @@
     }
 
     .clients .sub-heading {
-        text-align: center;
+        text-align: start;
     }
 
     .clients .container {
@@ -3085,7 +3106,7 @@
 
     .about-us .sub-heading-text {
         line-height: 21px;
-        text-align: center;
+        text-align: start;
         white-space: inherit;
     }
 

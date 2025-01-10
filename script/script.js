@@ -2,7 +2,8 @@
 const menu_button = document.querySelector(".header .menu-button");
 const menu = document.querySelector(".menu");
 const toggleMenu = () => {
-    menu_button.classList.toggle("opened");   
+    menu_button.classList.toggle("opened");
+    document.body.classList.toggle("steady");   
     menu.classList.toggle("closed");
 }
 menu_button.addEventListener("click", toggleMenu);
