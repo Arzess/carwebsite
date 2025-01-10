@@ -2806,7 +2806,7 @@
     }
     
 .offer::after{
-    content:".......................................";
+    content:".....................................................................";
     font-size: 20px;
     letter-spacing: 3px;
     width: 100%;
@@ -2815,6 +2815,10 @@
     height: auto;
     
 }
+.offer:last-child::after{
+    display: none;
+}
+
     .offer .info {
         font-size: 15px;
         padding: 12.5px 0;
