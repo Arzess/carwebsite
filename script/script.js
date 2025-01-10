@@ -18,7 +18,7 @@ forms.forEach(element => {
 });
 
 // Select elements
-const languageSelect = document.querySelector('.language-select');
+const languageSelect = document.querySelectorAll('.language-select');
 const selectedOption = document.querySelectorAll('.selected-option');
 const optionsContainer = document.querySelector('.options-container');
 const options = document.querySelectorAll('.option.language');
@@ -47,7 +47,9 @@ options.forEach(option => {
   });
 });
 document.addEventListener('click', (e) => {
-  if (!languageSelect.contains(e.target)) {
-    languageSelect.classList.remove('active');
-  }
+  languageSelect.forEach(select => {
+    if (!select.contains(e.target)){
+      select.classList.remove("active");
+    }
+  })
 });

@@ -4,11 +4,11 @@ const cars = document.querySelector(".hero .cars img")
 const backlight = document.querySelector(".hero .backlight")
 const heroForm = document.querySelector(".hero .consultation-form")
 const mobileNavBar = document.querySelector(".mobile-navbar")
-const navBarHeight = 60;
+const navBarHeight = 80;
 
 const adjustHeroMobile = () => {
     if (window.innerWidth <= 500){
-        heading.style.marginBottom = cars.clientHeight + "px"; 
+        heading.style.marginBottom = cars.clientHeight-30 + "px"; 
     }
     else{
         heading.style.marginBottom = 0;
