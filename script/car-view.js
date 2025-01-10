@@ -140,7 +140,11 @@ const mobileGallery = document.querySelector(".car-view .offer.mobile .gallery-l
 
 if (window.innerWidth <= 500){
     mobileGallery.addEventListener("click", ()=>{
-        mobileGallery.classList.toggle("zoomed");
-        document.querySelector(".car-view").classList.toggle("over")
+        document.querySelector(".offer-name-img").classList.add("zoomed");
+        document.querySelector(".car-view").classList.add("over")
+    })
+    mobileGallery.parentElement.querySelector(".offer.mobile .close button").addEventListener("click", ()=>{
+        document.querySelector(".offer-name-img").classList.remove("zoomed");
+        document.querySelector(".car-view").classList.remove("over")
     })
 }

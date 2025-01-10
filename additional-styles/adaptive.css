@@ -1984,22 +1984,41 @@
             flex-direction: column;
             width: 100vw;
         }
-        .car-view-offer.offer .gallery-list.zoomed {
+        .car-view-offer.offer .zoomed{
             width: 100vw;
-            height: 100vh; 
-            position: fixed; 
+            height: 100vh;
+            backdrop-filter: blur(100px);
             top: 0;
             left: 0;
+            position:   fixed;
+        }
+        .car-view-offer.offer .zoomed{
+            gap: 0 !important;
+        z-index: 2000001;
+        }
+        .car-view-offer.offer .zoomed .offer-name{
+            display: none;
+        }
+        .car-view-offer.offer .zoomed .close button{
+            padding: 8px;
+        }
+        .car-view-offer.offer .zoomed .close img{
+            width: 80px;
+            height: auto;
+        }
+        .car-view-offer.offer .zoomed .gallery-list {
             display: flex;
             overflow-x: auto; 
-            backdrop-filter: blur(100px);
+            height: 100%;
             overflow-y: hidden; 
             scroll-snap-type: x mandatory; 
             gap: 10px; 
             align-items: center;
         }
-        
-        .car-view-offer.offer .gallery-list.zoomed img {
+        .car-view-offer.offer .zoomed .close{
+            display: flex;
+        }
+        .car-view-offer.offer .zoomed .gallery-list img {
             flex-shrink: 0;
             position: relative;
             transform: rotateZ(90deg); 

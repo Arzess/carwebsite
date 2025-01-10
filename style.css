@@ -914,6 +914,9 @@ padding: 12px 18px;
 .car-view .gallery-list::-webkit-scrollbar{
     appearance: none;
 }
+.car-view .offer-name-img .close{
+    display: none;
+}
 .car-view .gallery-list{
     display: flex;
     overflow-x: scroll;
