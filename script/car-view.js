@@ -133,3 +133,13 @@ galleryList.addEventListener('scroll', () => {
 });
 document.addEventListener("DOMContentLoaded", checkCars);
 window.addEventListener("resize", checkCars);
+
+
+// Mobile
+const mobileGallery = document.querySelector(".car-view .offer.mobile .gallery-list");
+
+if (window.innerWidth <= 500){
+    mobileGallery.addEventListener("click", ()=>{
+        mobileGallery.classList.toggle("zoomed");
+    })
+}

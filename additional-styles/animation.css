@@ -316,6 +316,9 @@ footer .info-list a:hover {
     }
 }
 @media screen and (max-width: 500px){
+    .offer.car-view-offer .offer-img:hover {
+        height: 225px;
+    }
     .why-us .advantages .advantage:hover {
         transform: none !important;
     }

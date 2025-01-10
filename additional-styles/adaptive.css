@@ -1987,6 +1987,19 @@
         .car-view-offer.offer .gallery-list::-webkit-scrollbar{
             display: none;
         }
+        .car-view-offer.offer .gallery-list{
+            transition: 0.3s;
+        }
+        .car-view-offer.offer .gallery-list.zoomed{
+            width: 100vw;
+            position: fixed;
+            height: 100vh;
+        }
+        .car-view-offer.offer .gallery-list.zoomed img{
+            width: 100vw;
+            object-fit: cover;
+            height: 100%;
+        }
         .car-view-offer.offer .gallery-list img{
             width: 100vw;
             height: 225px;
