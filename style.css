@@ -4,6 +4,7 @@
 @import url(./additional-styles/font.css);
 :root{
     --scroll-y: 0;
+    --safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 
