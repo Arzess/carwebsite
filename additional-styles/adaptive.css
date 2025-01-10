@@ -2726,6 +2726,7 @@
     .consultation-form .inputs .form-comment::placeholder{
         position: absolute;
         top: 50%;
+        -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
     }
 
