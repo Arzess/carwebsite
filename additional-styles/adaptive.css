@@ -2743,7 +2743,7 @@
     .hero .headings-form-container {
         flex-direction: column;
         height: 100%;
-        margin-bottom: 60px;
+        /* margin-bottom: 60px; */
     }
 
     .hero .consultation-form {
