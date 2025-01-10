@@ -51,5 +51,5 @@ const adjustLayout = () => {
         });
     }, 100); 
 };
-window.addEventListener("load", adjustLayout);
-window.addEventListener("resize", adjustLayout);
+// window.addEventListener("load", adjustLayout);
+// window.addEventListener("resize", adjustLayout);
