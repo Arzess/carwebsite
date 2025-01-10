@@ -1337,7 +1337,7 @@ form .overlay .form-backlight img{
 .hero .consultation-form .consultation-form-text{
     font-size: 23px;
 }
-.hero .consultation-form .inputs input, .hero .language-select p, .hero .consultation-form .inputs .form-comment{
+.hero .consultation-form .inputs input, .hero .language-select p, .hero .consultation-form .inputs .form-comment, .hero .consultation-form .inputs .placholder{
     font-size: 16px;
 }
 .hero .consultation-form{

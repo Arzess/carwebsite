@@ -147,7 +147,7 @@
         font-size: 20px;
     }
 
-    .consultation-form .inputs input, .hero .consultation-form .inputs .form-comment {
+    .consultation-form .inputs input, .hero .consultation-form .inputs .placeholder, .consultation-form .inputs textarea{
         font-size: 12px !important; 
     }
 
@@ -837,7 +837,7 @@
         width: 22em;
     }
 
-    .hero .consultation-form .inputs input, .hero .consultation-form .inputs .form-comment {
+    .hero .consultation-form .inputs input, .hero .consultation-form .inputs .placeholder, .hero .consultation-form .inputs textarea {
         font-size: 8.5px !important;
         padding: 10px;
     }
