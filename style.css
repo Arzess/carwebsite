@@ -793,6 +793,9 @@ padding: 12px 18px;
     overflow: visible;
     filter: none !important;
 }
+.car-view.over{
+    z-index: 200001;
+}
 .car-view.car-view.fullscreen{
     z-index: 20001;
 

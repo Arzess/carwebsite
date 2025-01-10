@@ -141,5 +141,6 @@ const mobileGallery = document.querySelector(".car-view .offer.mobile .gallery-l
 if (window.innerWidth <= 500){
     mobileGallery.addEventListener("click", ()=>{
         mobileGallery.classList.toggle("zoomed");
+        document.querySelector(".car-view").classList.toggle("over")
     })
 }

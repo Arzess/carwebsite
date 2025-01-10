@@ -1990,7 +1990,6 @@
             position: fixed; 
             top: 0;
             left: 0;
-            z-index: 200001;
             display: flex;
             overflow-x: auto; 
             backdrop-filter: blur(100px);
