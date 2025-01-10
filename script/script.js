@@ -2,22 +2,21 @@
 const menuButton = document.querySelector(".header .menu-button");
 const menu = document.querySelector(".menu");
 let scrollY = 0;
-
 const toggleMenu = () => {
-    if (menu.classList.contains("closed")) {
-        scrollY = window.scrollY;
-        document.body.style.position = 'fixed';
-        document.body.style.width = '100%';
-    } else {
-        document.body.style.position = '';
-        document.body.style.top = '';
-        document.body.style.width = '';
-        window.scrollTo(0, scrollY);
-    }
+  if (menu.classList.contains("closed")) {
+      scrollY = window.scrollY;
+      document.body.classList.add('menu-open');
+      document.body.style.top = `-${scrollY}px`;
+  } else {
+      document.body.classList.remove('menu-open');
+      document.body.style.top = '';
+      window.scrollTo(0, scrollY);
+  }
 
-    menuButton.classList.toggle("opened");
-    menu.classList.toggle("closed");
+  menuButton.classList.toggle("opened");
+  menu.classList.toggle("closed");
 };
+
 
 menuButton.addEventListener("click", toggleMenu);
 
