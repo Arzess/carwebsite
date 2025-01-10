@@ -43,19 +43,14 @@ const adjustForm = () => {
     }
 }
 
+const adjustLayout = () => {
+    requestAnimationFrame(() => {
+        adjustHeroMobile();
+        adjustCarsHeroMobile();
+        adjustForm();
+        setRealVH();
+    });
+};
 
-document.addEventListener("DOMContentLoaded", ()=>{
-    adjustHeroMobile()
-    adjustCarsHeroMobile()
-    adjustForm()
-    setRealVH()
-});
-
-
-window.addEventListener("resize", ()=>{
-    adjustCarsHeroMobile();
-    adjustHeroMobile();
-    adjustForm();
-    setRealVH();
-
-})
+window.addEventListener("load", adjustLayout);
+window.addEventListener("resize", adjustLayout);
