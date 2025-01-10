@@ -3,8 +3,6 @@ const heading = document.querySelector(".hero .headings-container");
 const cars = document.querySelector(".hero .cars img")
 const backlight = document.querySelector(".hero .backlight")
 const heroForm = document.querySelector(".hero .consultation-form")
-const mobileNavBar = document.querySelector(".mobile-navbar")
-const navBarHeight = 120;
 const safeAreaBottom = parseInt(window.getComputedStyle(document.documentElement).getPropertyValue("--safe-area-inset-bottom")) || 0;
 
 let resizeTimeoutVH;

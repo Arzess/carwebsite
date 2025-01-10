@@ -2484,24 +2484,29 @@ margin-bottom: 100px;
 
 }
 /* Mobile navbar */
-.mobile-navbar{
+.mobile-navbar {
     width: 100%;
     position: fixed;
     bottom: 0;
     z-index: 999;
     padding: 0;
-    height: 0;
-    transition: .3s;
+    opacity: 0;
+    transform: translateY(100%); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(100%);
     backdrop-filter: blur(4.3px);
     background-color: rgba(22, 31, 54, 0.94);
     border: 0.7px var(--stroke-color-main);
 }
-.mobile-navbar.shown{
+
+/* When the navbar is shown */
+.mobile-navbar.shown {
     padding: 10px calc(40px + env(safe-area-inset-bottom));
-    height: auto;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
 }
+
 .mobile-navbar-list{
     display: flex;
     align-items: start;
