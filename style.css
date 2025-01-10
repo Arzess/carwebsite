@@ -25,6 +25,7 @@ body.no-scroll{
     height: 100vh;
 }
 body{
+    overscroll-behavior-y: contain;
     overflow: hidden;
 }
 button{
