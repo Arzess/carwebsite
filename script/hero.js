@@ -7,14 +7,9 @@ const safeAreaBottom = parseInt(window.getComputedStyle(document.documentElement
 
 let resizeTimeoutVH;
 const setRealVH = () => {
-    clearTimeout(resizeTimeoutVH);
-    resizeTimeoutVH = setTimeout(() => {
-        const vh = window.innerHeight * 0.01; // Calculate 1% of the viewport height
-        document.documentElement.style.setProperty('--real-vh', `${vh}px`);
-    }, 100);
-};
-
-
+    const vh = window.innerHeight * 0.01; // Calculate 1% of the viewport height
+    document.documentElement.style.setProperty('--real-vh', `${vh}px`);
+ };
 
 
 const adjustHeroMobile = () => {
