@@ -4,8 +4,7 @@ const backlight = document.querySelector(".hero .backlight");
 const heroForm = document.querySelector(".hero .consultation-form");
 const safeAreaBottom = parseInt(window.getComputedStyle(document.documentElement).getPropertyValue("--safe-area-inset-bottom")) || 0;
 
-let resizeTimeoutVH;
-let resizeTimeout;
+let layoutAdjusted = false;
 
 const adjustMargin = (element, property, value) => {
   if (window.innerWidth <= 500) {
@@ -22,13 +21,12 @@ const setRealVH = () => {
 
 const adjustHeroMobile = () => {
   if (window.innerWidth <= 500) {
-    heading.style.marginBottom = `${cars.clientHeight - 30}px`; 
+    heading.style.marginBottom = `${cars.clientHeight - 30}px`;
   } else {
     heading.style.marginBottom = 0;
   }
 };
 
-// Adjustments for the cars section
 const adjustCarsHeroMobile = () => {
   const marginBottom = heroForm.clientHeight + safeAreaBottom + "px";
   if (window.innerWidth <= 500) {
@@ -45,20 +43,21 @@ const adjustForm = () => {
 };
 
 const adjustLayout = () => {
-  clearTimeout(resizeTimeout);
-  resizeTimeout = setTimeout(() => {
+  if (!layoutAdjusted) {
+    layoutAdjusted = true;
+
     requestAnimationFrame(() => {
       adjustHeroMobile();
       adjustCarsHeroMobile();
       adjustForm();
       setRealVH();
     });
-  }, 100); 
+  }
 };
 
 const onLoadAndResize = () => {
   adjustLayout();
-  window.removeEventListener("resize", onLoadAndResize);
+  window.removeEventListener("resize", onLoadAndResize); 
 };
 
 window.addEventListener("load", onLoadAndResize);
