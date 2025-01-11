@@ -147,7 +147,6 @@ const removeSelected = (galleryImages) => {
         image.classList.remove("selected");
     })
 }
-toggleScale();
 if (window.innerWidth <= 500){
     mobileGallery.addEventListener("click", ()=>{
         document.querySelector(".offer-name-img").classList.add("clicked");
@@ -171,8 +170,6 @@ if (window.innerWidth <= 500){
         document.querySelector(".offer-name-img").classList.remove("single");
         document.querySelector(".offer-name-img").classList.add("clicked");
         document.querySelector(".car-view").classList.add("over")
-        zoomEnabled = false;
-        toggleScale();
     })
     galleryImagesCarView.forEach(i => {    
         i.addEventListener("click", ()=>{
@@ -186,8 +183,6 @@ if (window.innerWidth <= 500){
                 i.classList.add("selected");
                 let copySrc = i.children[0].getAttribute("src");
                 mainPicture.children[1].src = copySrc;
-                zoomEnabled=true;
-                toggleScale();
             }     
         }) 
         
