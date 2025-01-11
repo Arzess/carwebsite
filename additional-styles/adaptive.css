@@ -405,7 +405,9 @@
     /* .controls img {
         width: 12px;
     } */
-
+    .offer{
+        width: 28%;
+    }
     .auto-order .more-info {
         font-size: 20px;
         width: 300px;
@@ -545,6 +547,9 @@
         width: 18%;
         padding: 5px 10px;
     }
+    .marketplace .offer .offer-name-img img {
+        height: 150px;
+    }
 
     .marketplace .offer-name {
         font-size: 10px;
@@ -588,7 +593,7 @@
         text-align: left;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
-        border: 1px solid var(--accent-color);
+        border: 1px solid var(--input-color);
         padding: 6px 10px;
     }
     .stat-row {
@@ -1259,6 +1264,9 @@
         margin-left: -5px;
         width: calc(100% + (2 * 5px));
     }
+    .marketplace .offer .offer-name-img img {
+        height: 100px;
+    }
 
     .marketplace .price {
         font-size: 5px;
@@ -1280,7 +1288,7 @@
         text-align: left;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
-        border: 1px solid var(--accent-color);
+        border: 1px solid var(--input-color);
         padding: 4px 7px;
     }
     .stat-row {
@@ -1767,7 +1775,7 @@
     }
 
     .offer-list {
-        gap: 3rem;
+        gap: 1rem;
     }
 
     .offer .stat-block {
@@ -1919,7 +1927,12 @@
     .hero .heading {
         font-size: 24px;
     }
-
+    .marketplace .offer{
+        width: 30%;
+    }
+    .offer{
+        width: 40%;
+    }
 
 }
 
@@ -2377,7 +2390,9 @@
 
     }
 
-
+.marketplace .offer .offer-name-img img {
+    height: 225px;
+}
 
     .marketplace-sort-container.mobile {
         border: 0;
@@ -2429,7 +2444,8 @@
     }
 
     .marketplace .page-menu {
-        display: none;
+        display: flex;
+        justify-content: center;
     }
     /* Car view */
     .car-view .car-name{
@@ -2736,6 +2752,7 @@
     .marketplace .offer .info,
     .marketplace .offer .apply {
         font-size: 15px;
+        margin: 0;
     }
 
     .marketplace .stat-row {
@@ -2815,6 +2832,7 @@
     .consultation-form .inputs .consultation-submit-button {
         font-size: 13px !important;
         line-height: 17px;
+        white-space: inherit;
 
     }
     .consultation-form .inputs .form-comment{

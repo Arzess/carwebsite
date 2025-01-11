@@ -138,11 +138,6 @@ window.addEventListener("resize", checkCars);
 // Mobile
 const mobileGallery = document.querySelector(".car-view .offer.mobile .gallery-list");
 const galleryImagesCarView = document.querySelectorAll(".car-view .offer.mobile .gallery-list .gallery-unit");
-let isDragging = false;
-let initialX = 0, initialY = 0, offsetX = 0, offsetY = 0;
-let initialDistance = 0, scale = 4;
-let lastScale = scale;
-
 
 const mainPicture = document.querySelector(".car-view .offer.mobile .main-img");
 const getBackMobile = document.querySelector(".car-view .offer.mobile .get-back");
@@ -152,6 +147,7 @@ const removeSelected = (galleryImages) => {
         image.classList.remove("selected");
     })
 }
+toggleScale();
 if (window.innerWidth <= 500){
     mobileGallery.addEventListener("click", ()=>{
         document.querySelector(".offer-name-img").classList.add("clicked");
@@ -175,6 +171,8 @@ if (window.innerWidth <= 500){
         document.querySelector(".offer-name-img").classList.remove("single");
         document.querySelector(".offer-name-img").classList.add("clicked");
         document.querySelector(".car-view").classList.add("over")
+        zoomEnabled = false;
+        toggleScale();
     })
     galleryImagesCarView.forEach(i => {    
         i.addEventListener("click", ()=>{
@@ -188,6 +186,8 @@ if (window.innerWidth <= 500){
                 i.classList.add("selected");
                 let copySrc = i.children[0].getAttribute("src");
                 mainPicture.children[1].src = copySrc;
+                zoomEnabled=true;
+                toggleScale();
             }     
         }) 
         
@@ -229,21 +229,7 @@ rightArrow.addEventListener("click", () => {
 
 mainPicture.addEventListener("click", (e) => {
     if (!e.target.closest(".left") && !e.target.closest(".right")) {
-        // if (mainPicture.classList.contains("zoomed")) {
-        //     controls.classList.remove("hidden");
-        //     mainPicture.classList.remove("zoomed");
-        //     mobileGallery.classList.remove("full-height");
-            
-        //     mainPicture.style.transform = "scale(1)";
-        // } else {
-        //     controls.classList.add("hidden");
-        //     mainPicture.classList.add("zoomed");
-        //     mobileGallery.classList.add("full-height");
-            
-        //     mainPicture.style.transform = `scale(${scale}) translate(0px, 0px)`;
-        // }
         // Original image
-
         location.href = mainPicture.children[1].src;
     }
 });

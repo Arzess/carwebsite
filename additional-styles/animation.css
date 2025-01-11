@@ -191,6 +191,18 @@ select:active, select:focus-visible {
 .consultation-form select:hover {
     border: 1px solid var(--accent-color);
 }
+textarea:hover{
+  appearance: 0;
+  outline: 0;
+  border: 1px solid var(--accent-color);  
+}
+textarea{
+    transition: 0.3s;
+}
+textarea:focus, textarea:hover{
+    outline: 0;
+    border: 1px solid var(--accent-color) !important;
+}
 .consultation-form .inputs input:hover, .consultation-form .inputs input[type="tel"]:hover {
     border: 1px solid var(--accent-color);
 }
