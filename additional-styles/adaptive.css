@@ -223,7 +223,7 @@
 
     /* Feedback section */
 
-    .feedback .consultation-form input, .feedback .form-comment {
+    .feedback .consultation-form input, .feedback .form-comment, .feedback .placeholder {
         font-size: 16px !important;
     }
 
@@ -453,7 +453,7 @@
         max-width: 300px;
     }
 
-    .feedback .consultation-form input, .feedback .form-comment {
+    .feedback .consultation-form input, .feedback .form-comment, .feedback .placeholder {
         font-size: 12px !important;
     }
 
@@ -1102,7 +1102,7 @@
         background: url(../img/arrow.svg) no-repeat 80% 50%/16px 16px, rgba(0, 0, 0, 0.25);
     }
 
-    .feedback .consultation-form input, .feedback .form-comment {
+    .feedback .consultation-form input, .feedback .form-comment, .feedback .placeholder {
         font-size: 15px !important;
     }
 
