@@ -1984,7 +1984,7 @@
             flex-direction: column;
             width: 100vw;
         }
-        .car-view-offer.offer .zoomed{
+        .car-view-offer.offer .clicked{
             width: 100vw;
             height: 100vh;
             backdrop-filter: blur(100px);
@@ -1992,43 +1992,96 @@
             left: 0;
             position:   fixed;
         }
-        .car-view-offer.offer .zoomed{
+        .car-view-offer.offer .clicked{
             gap: 0 !important;
         z-index: 2000001;
         }
-        .car-view-offer.offer .zoomed .offer-name{
+        .car-view-offer.offer .clicked .close .close-half{
+            width: 60%;
+        }
+        .car-view-offer.offer .clicked .offer-name{
             display: none;
         }
-        .car-view-offer.offer .zoomed .close button{
+        .car-view-offer.offer .clicked .close button{
             padding: 8px;
         }
-        .car-view-offer.offer .zoomed .close img{
+        .car-view-offer.offer .clicked .close img{
             width: 80px;
             height: auto;
         }
-        .car-view-offer.offer .zoomed .gallery-list {
+        .car-view-offer.offer .clicked .gallery-list {
             display: flex;
-            overflow-x: auto; 
-            height: 100%;
-            overflow-y: hidden; 
-            scroll-snap-type: x mandatory; 
-            gap: 10px; 
+            flex-direction: column;
+            width: 100%;
             align-items: center;
         }
-        .car-view-offer.offer .zoomed .close{
+        .car-view-offer.offer .clicked .close{
             display: flex;
         }
-        .car-view-offer.offer .zoomed .gallery-list img {
+        .car-view-offer.offer .clicked .close .get-back{
+            margin-right: auto;
+            display: none;
+        }
+        .car-view-offer.offer .clicked .close .get-back.shown{
+            display: flex;
+        }
+        .car-view-offer.offer .clicked .close .get-back img{
+            width: 0.75rem;
+        }
+        .car-view-offer.offer .clicked .gallery-list li{
+            width: 100%;
+        }
+        .car-view-offer.offer .single li{
+            display: none;
+        }
+        .car-view-offer.offer .clicked.single .main-img img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+        .car-view-offer.offer .single .gallery-list::-webkit-scrollbar{
+            display: none;
+        }
+        .car-view-offer.offer .single{
+            justify-content: space-between;
+        }
+        /* For balance */
+        .car-view-offer.offer .single::after{
+            content: "";
+            position: relative;
+        }
+        .car-view-offer.offer .single li.main-img{
+            display: flex;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+            cursor: zoom-in;
+        }
+        .car-view-offer.offer .single li.main-img.zoomed{
+            transform: scale(4);
+            cursor: move;
+        }
+        .car-view-offer.offer .single li.main-img .controls img{
+            width: 0.5rem;
+        }
+        .car-view-offer.offer .single li.main-img .controls div{
+            padding: 0 10px;
+        }
+        .car-view-offer.offer .clicked .gallery-list img {
             flex-shrink: 0;
             position: relative;
-            transform: rotateZ(90deg); 
-            width: 100vh; 
-            height: 100vw; 
+            width: 100%;  
             object-fit: cover; 
-            scroll-snap-align: center; 
-            bottom: 0;
+        }
+        .car-view-offer.offer .gallery-list .main-img{
+            display: none;
+        }
+        .car-view-offer.offer .gallery-list.full-height{
+            height: 100%;
         }
         
+        .car-view-offer.offer .gallery-list .main-img.shown{
+            display: flex;
+        }
         
         .car-view-offer.offer .gallery-list img{
             width: 100vw;

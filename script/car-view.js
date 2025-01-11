@@ -137,14 +137,151 @@ window.addEventListener("resize", checkCars);
 
 // Mobile
 const mobileGallery = document.querySelector(".car-view .offer.mobile .gallery-list");
-
-if (window.innerWidth <= 500){
-    mobileGallery.addEventListener("click", ()=>{
-        document.querySelector(".offer-name-img").classList.add("zoomed");
-        document.querySelector(".car-view").classList.add("over")
-    })
-    mobileGallery.parentElement.querySelector(".offer.mobile .close button").addEventListener("click", ()=>{
-        document.querySelector(".offer-name-img").classList.remove("zoomed");
-        document.querySelector(".car-view").classList.remove("over")
+const galleryImagesCarView = document.querySelectorAll(".car-view .offer.mobile .gallery-list .gallery-unit");
+let isDragging = false;
+let initialX, initialY, offsetX = 0, offsetY = 0;
+const mainPicture = document.querySelector(".car-view .offer.mobile .main-img");
+const getBackMobile = document.querySelector(".car-view .offer.mobile .get-back");
+const closeButton = document.querySelector(".car-view .offer.mobile .close-button");
+const removeSelected = (galleryImages) => {
+    galleryImages.forEach(image => {
+        image.classList.remove("selected");
     })
 }
+if (window.innerWidth <= 500){
+    mobileGallery.addEventListener("click", ()=>{
+        document.querySelector(".offer-name-img").classList.add("clicked");
+        document.body.classList.add("no-scroll")
+        document.querySelector(".car-view").classList.add("over")
+        document.body.classList.add("steady")
+    })
+    closeButton.addEventListener("click", ()=>{
+        document.querySelector(".offer-name-img").classList.remove("clicked");
+        document.body.classList.remove("steady")
+        document.querySelector(".offer-name-img").classList.remove("single");
+        mobileGallery.classList.add("scrollable")
+        getBackMobile.classList.remove("shown")
+        document.body.classList.remove("no-scroll")
+        document.querySelector(".car-view").classList.remove("over");
+    })
+    getBackMobile.addEventListener("click", ()=>{
+        mobileGallery.classList.add("scrollable")
+        getBackMobile.classList.remove("shown")
+        document.body.classList.add("no-scroll")
+        document.querySelector(".offer-name-img").classList.remove("single");
+        document.querySelector(".offer-name-img").classList.add("clicked");
+        document.querySelector(".car-view").classList.add("over")
+    })
+    galleryImagesCarView.forEach(i => {    
+        i.addEventListener("click", ()=>{
+            if (document.querySelector(".offer-name-img").classList.contains("clicked")){
+                getBackMobile.classList.add("shown")
+                document.body.classList.add("no-scroll")
+                mobileGallery.classList.remove("scrollable")
+                document.querySelector(".offer-name-img").classList.add("single");
+                // Remove all previous selected classes
+                removeSelected(galleryImagesCarView);
+                i.classList.add("selected");
+                let copySrc = i.children[0].getAttribute("src");
+                mainPicture.children[1].src = copySrc;
+            }     
+        }) 
+        
+    })
+// Arrow logic
+const controls = document.querySelector(".offer.mobile .controls");
+const leftArrow = controls.children[0];
+const rightArrow = controls.children[1];
+
+let currentMobileIndex = 0;
+
+const updateMobileGallery = () => {
+    removeSelected(galleryImagesCarView);
+    galleryImagesCarView[currentMobileIndex].classList.add("selected");
+    const newSrc = galleryImagesCarView[currentMobileIndex].children[0].getAttribute("src");
+    mainPicture.children[1].src = newSrc;
+};
+
+leftArrow.addEventListener("click", () => {
+    if (currentMobileIndex > 0) {
+        currentMobileIndex--;
+        updateMobileGallery();
+    }
+    else{
+        currentMobileIndex = galleryImagesCarView.length-1;
+    }
+});
+
+rightArrow.addEventListener("click", () => {
+    if (currentMobileIndex < galleryImagesCarView.length - 1) {
+        currentMobileIndex++;
+        updateMobileGallery();
+    }
+    else{
+        currentMobileIndex = 0;
+    }
+});
+
+mainPicture.addEventListener("click", (e) => {
+    if (!e.target.closest(".left") && !e.target.closest(".right")){
+        if (mainPicture.classList.contains("zoomed")) {
+            controls.classList.remove("hidden");
+            mainPicture.classList.remove("zoomed");
+            mobileGallery.classList.remove("full-height");
+            
+            mainPicture.style.transform = "scale(1)";
+        } else {
+            controls.classList.add("hidden");
+            mainPicture.classList.add("zoomed");
+            mobileGallery.classList.add("full-height");
+            
+            mainPicture.style.transform = "scale(4) translate(0px, 0px)";
+        }
+    }
+
+});
+// Dragging logic
+mainPicture.addEventListener("touchstart", (e) => {
+    if (mainPicture.classList.contains("zoomed")) {
+        isDragging = true;
+
+        initialX = e.touches[0].clientX - offsetX;
+        initialY = e.touches[0].clientY - offsetY;
+
+        mainPicture.style.cursor = 'grabbing'; 
+    }
+});
+
+document.addEventListener("touchmove", (e) => {
+    if (isDragging) {
+        const deltaX = e.touches[0].clientX - initialX;
+        const deltaY = e.touches[0].clientY - initialY;
+
+        offsetX = deltaX;
+        offsetY = deltaY;
+
+        mainPicture.style.transform = `scale(4) translate(${offsetX}px, ${offsetY}px)`;
+    }
+});
+
+document.addEventListener("touchend", () => {
+    isDragging = false;
+    mainPicture.style.cursor = 'move';
+
+    const bounds = mainPicture.getBoundingClientRect();
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+
+    if (bounds.left > windowWidth || bounds.top > windowHeight || bounds.right < 0 || bounds.bottom < 0) {
+        mainPicture.style.transition = "transform 0.3s ease-in-out";
+        mainPicture.style.transform = "scale(4) translate(0px, 0px)";
+        
+        setTimeout(() => {
+            mainPicture.style.transition = "none";
+        }, 300);
+    }
+});
+
+mainPicture.addEventListener("touchmove", (e) => e.preventDefault(), { passive: false });
+}
+

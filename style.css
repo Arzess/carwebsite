@@ -874,6 +874,9 @@ padding: 12px 18px;
     flex-direction: row;
     justify-content: space-between;
 }
+.controls.hidden{
+    opacity: 0;
+}
 .controls .hidden {
     width: 0 !important;
     padding-left: 0 !important;

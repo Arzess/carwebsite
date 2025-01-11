@@ -6,17 +6,15 @@ const toggleMenu = () => {
   menuButton.classList.toggle("opened");
   menu.classList.toggle("closed");
 };
-document.body.addEventListener('wheel', (e) => {
-  if (document.body.classList.contains("steady")){
+function preventBodyScroll(e) {
+  if (document.body.classList.contains("steady") && !e.target.closest('.scrollable')){
     e.preventDefault();
   }
-}, { passive: false });
+}
 
-document.body.addEventListener('touchmove', (e) => {
-  if (document.body.classList.contains("steady")){
-    e.preventDefault();
-  }
-}, { passive: false });
+// Prevent body scrolling, but allow for elements with the "scrollable" class
+document.body.addEventListener('wheel', preventBodyScroll, { passive: false });
+document.body.addEventListener('touchmove', preventBodyScroll, { passive: false });
 
 
 menuButton.addEventListener("click", toggleMenu);
