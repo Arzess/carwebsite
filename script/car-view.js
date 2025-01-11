@@ -139,7 +139,11 @@ window.addEventListener("resize", checkCars);
 const mobileGallery = document.querySelector(".car-view .offer.mobile .gallery-list");
 const galleryImagesCarView = document.querySelectorAll(".car-view .offer.mobile .gallery-list .gallery-unit");
 let isDragging = false;
-let initialX, initialY, offsetX = 0, offsetY = 0;
+let initialX = 0, initialY = 0, offsetX = 0, offsetY = 0;
+let initialDistance = 0, scale = 4;
+let lastScale = scale;
+
+
 const mainPicture = document.querySelector(".car-view .offer.mobile .main-img");
 const getBackMobile = document.querySelector(".car-view .offer.mobile .get-back");
 const closeButton = document.querySelector(".car-view .offer.mobile .close-button");
@@ -222,8 +226,9 @@ rightArrow.addEventListener("click", () => {
     }
 });
 
+
 mainPicture.addEventListener("click", (e) => {
-    if (!e.target.closest(".left") && !e.target.closest(".right")){
+    if (!e.target.closest(".left") && !e.target.closest(".right")) {
         if (mainPicture.classList.contains("zoomed")) {
             controls.classList.remove("hidden");
             mainPicture.classList.remove("zoomed");
@@ -235,52 +240,59 @@ mainPicture.addEventListener("click", (e) => {
             mainPicture.classList.add("zoomed");
             mobileGallery.classList.add("full-height");
             
-            mainPicture.style.transform = "scale(4) translate(0px, 0px)";
+            mainPicture.style.transform = `scale(${scale}) translate(0px, 0px)`;
         }
     }
-
 });
-// Dragging logic
-mainPicture.addEventListener("touchstart", (e) => {
-    if (mainPicture.classList.contains("zoomed")) {
-        isDragging = true;
 
+mainPicture.addEventListener("touchstart", (e) => {
+    if (e.touches.length === 1) {
+        isDragging = true;
         initialX = e.touches[0].clientX - offsetX;
         initialY = e.touches[0].clientY - offsetY;
-
         mainPicture.style.cursor = 'grabbing'; 
+    } else if (e.touches.length === 2) {
+        
+        initialDistance = getDistance(e.touches[0], e.touches[1]);
     }
 });
 
-document.addEventListener("touchmove", (e) => {
-    if (isDragging) {
+mainPicture.addEventListener("touchmove", (e) => {
+    if (isDragging && e.touches.length === 1) {
+       
         const deltaX = e.touches[0].clientX - initialX;
         const deltaY = e.touches[0].clientY - initialY;
 
         offsetX = deltaX;
         offsetY = deltaY;
 
-        mainPicture.style.transform = `scale(4) translate(${offsetX}px, ${offsetY}px)`;
-    }
-});
+        mainPicture.style.transform = `scale(${scale}) translate(${offsetX}px, ${offsetY}px)`;
+    } else if (e.touches.length === 2) {
+        const newDistance = getDistance(e.touches[0], e.touches[1]);
+        const scaleFactor = newDistance / initialDistance; 
 
-document.addEventListener("touchend", () => {
-    isDragging = false;
-    mainPicture.style.cursor = 'move';
+        scale = lastScale * scaleFactor;
 
-    const bounds = mainPicture.getBoundingClientRect();
-    const windowWidth = window.innerWidth;
-    const windowHeight = window.innerHeight;
-
-    if (bounds.left > windowWidth || bounds.top > windowHeight || bounds.right < 0 || bounds.bottom < 0) {
-        mainPicture.style.transition = "transform 0.3s ease-in-out";
-        mainPicture.style.transform = "scale(4) translate(0px, 0px)";
         
-        setTimeout(() => {
-            mainPicture.style.transition = "none";
-        }, 300);
+        scale = Math.max(1, Math.min(scale, 5)); 
+
+        mainPicture.style.transform = `scale(${scale}) translate(${offsetX}px, ${offsetY}px)`;
     }
 });
+
+mainPicture.addEventListener("touchend", (e) => {
+    if (e.touches.length === 0) {
+        isDragging = false;
+        mainPicture.style.cursor = 'move';
+        lastScale = scale;
+    }
+});
+
+function getDistance(touch1, touch2) {
+    const dx = touch2.clientX - touch1.clientX;
+    const dy = touch2.clientY - touch1.clientY;
+    return Math.sqrt(dx * dx + dy * dy); 
+}
 
 mainPicture.addEventListener("touchmove", (e) => e.preventDefault(), { passive: false });
 }
