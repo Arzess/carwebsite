@@ -247,5 +247,5 @@ mainPicture.addEventListener("click", (e) => {
         location.href = mainPicture.children[1].src;
     }
 });
-}
+}   
 
