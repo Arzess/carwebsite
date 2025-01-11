@@ -15,7 +15,7 @@
 
     /* Marketplace */
     .offer {
-        width: 20%;
+        width: 30%;
     }
 
     /* Car view */
@@ -405,9 +405,6 @@
     /* .controls img {
         width: 12px;
     } */
-    .offer{
-        width: 28%;
-    }
     .auto-order .more-info {
         font-size: 20px;
         width: 300px;
@@ -544,7 +541,6 @@
         gap: 40px;
     }
     .marketplace .offer {
-        width: 18%;
         padding: 5px 10px;
     }
     .marketplace .offer .offer-name-img img {
@@ -1752,7 +1748,7 @@
     }
 
     .marketplace .offer {
-        width: 18%;
+        width: 30%;
         padding: 3px 5px;
     }
 
