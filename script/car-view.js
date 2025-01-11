@@ -229,71 +229,23 @@ rightArrow.addEventListener("click", () => {
 
 mainPicture.addEventListener("click", (e) => {
     if (!e.target.closest(".left") && !e.target.closest(".right")) {
-        if (mainPicture.classList.contains("zoomed")) {
-            controls.classList.remove("hidden");
-            mainPicture.classList.remove("zoomed");
-            mobileGallery.classList.remove("full-height");
+        // if (mainPicture.classList.contains("zoomed")) {
+        //     controls.classList.remove("hidden");
+        //     mainPicture.classList.remove("zoomed");
+        //     mobileGallery.classList.remove("full-height");
             
-            mainPicture.style.transform = "scale(1)";
-        } else {
-            controls.classList.add("hidden");
-            mainPicture.classList.add("zoomed");
-            mobileGallery.classList.add("full-height");
+        //     mainPicture.style.transform = "scale(1)";
+        // } else {
+        //     controls.classList.add("hidden");
+        //     mainPicture.classList.add("zoomed");
+        //     mobileGallery.classList.add("full-height");
             
-            mainPicture.style.transform = `scale(${scale}) translate(0px, 0px)`;
-        }
+        //     mainPicture.style.transform = `scale(${scale}) translate(0px, 0px)`;
+        // }
+        // Original image
+
+        location.href = mainPicture.children[1].src;
     }
 });
-
-mainPicture.addEventListener("touchstart", (e) => {
-    if (e.touches.length === 1) {
-        isDragging = true;
-        initialX = e.touches[0].clientX - offsetX;
-        initialY = e.touches[0].clientY - offsetY;
-        mainPicture.style.cursor = 'grabbing'; 
-    } else if (e.touches.length === 2) {
-        
-        initialDistance = getDistance(e.touches[0], e.touches[1]);
-    }
-});
-
-mainPicture.addEventListener("touchmove", (e) => {
-    if (isDragging && e.touches.length === 1) {
-       
-        const deltaX = e.touches[0].clientX - initialX;
-        const deltaY = e.touches[0].clientY - initialY;
-
-        offsetX = deltaX;
-        offsetY = deltaY;
-
-        mainPicture.style.transform = `scale(${scale}) translate(${offsetX}px, ${offsetY}px)`;
-    } else if (e.touches.length === 2) {
-        const newDistance = getDistance(e.touches[0], e.touches[1]);
-        const scaleFactor = newDistance / initialDistance; 
-
-        scale = lastScale * scaleFactor;
-
-        
-        scale = Math.max(1, Math.min(scale, 5)); 
-
-        mainPicture.style.transform = `scale(${scale}) translate(${offsetX}px, ${offsetY}px)`;
-    }
-});
-
-mainPicture.addEventListener("touchend", (e) => {
-    if (e.touches.length === 0) {
-        isDragging = false;
-        mainPicture.style.cursor = 'move';
-        lastScale = scale;
-    }
-});
-
-function getDistance(touch1, touch2) {
-    const dx = touch2.clientX - touch1.clientX;
-    const dy = touch2.clientY - touch1.clientY;
-    return Math.sqrt(dx * dx + dy * dy); 
-}
-
-mainPicture.addEventListener("touchmove", (e) => e.preventDefault(), { passive: false });
 }
 
