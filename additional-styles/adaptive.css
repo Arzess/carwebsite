@@ -3257,6 +3257,9 @@
         text-decoration-skip-ink: none;
         margin-bottom: 0;
     }
+    .cookie{
+        width: auto;
+    }
 }
 
 

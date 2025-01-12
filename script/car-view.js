@@ -49,7 +49,7 @@ carViewMainPicture.addEventListener("click", (e)=>{
 
 const galleryList = document.querySelector('.gallery-list');
     const mainImg = document.querySelector('.main-img');
- galleryItems = document.querySelectorAll('.gallery-img');
+ let galleryItems = document.querySelectorAll('.gallery-img');
     const leftControl = document.querySelector('.main-img-container .controls .left');
     const rightControl = document.querySelector('.main-img-container .controls .right');
     let currentIndex = 0;
