@@ -3259,6 +3259,8 @@
     }
     .cookie{
         width: auto;
+        left: 0;
+        bottom: 0;
     }
 }
 
