@@ -2586,6 +2586,9 @@
         height: calc(100vh - 64px);
         /* overflow-y: scroll; */
     }
+    .menu .close{
+        padding-right: 2rem;
+    } 
     .menu .close .close-button{
         font-size: 2rem;
     }
