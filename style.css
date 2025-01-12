@@ -38,6 +38,7 @@ body.overlay::after{
     z-index: 334444;
     pointer-events: none;
     top: 0;
+    left: 0;
 }
 button{
     cursor: pointer;
