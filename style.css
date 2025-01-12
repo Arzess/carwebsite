@@ -45,6 +45,7 @@ button{
 }
 body.blurred section{
     filter: blur(32px);
+    -webkit-filter: blur(32px);
 }
 ::-webkit-scrollbar {
     width: 10px;

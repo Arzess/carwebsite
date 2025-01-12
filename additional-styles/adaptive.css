@@ -2015,12 +2015,14 @@
         }
         .car-view-offer.offer .clicked .close img{
             width: 80px;
-            height: auto;
+            height: auto !important;
         }
         .car-view-offer.offer .clicked .gallery-list {
             display: flex;
             flex-direction: column;
             width: 100%;
+            overflow-x: hidden;
+            overflow-y: scroll;
             align-items: center;
         }
         .car-view-offer.offer .clicked .close{
