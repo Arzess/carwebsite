@@ -15,7 +15,7 @@
 
     /* Marketplace */
     .offer {
-        width: 30%;
+        width: calc(100%/3 - (20px*0.7));
     }
 
     /* Car view */
@@ -965,7 +965,7 @@
     }
 
     .offer img {
-        height: 120px;
+        height: 120px !important;
     }
 
     .stat-block {
@@ -1752,10 +1752,6 @@
         padding: 3px 5px;
     }
 
-    .offer img {
-        height: 60px;
-    }
-
     .offer-name-img {
         gap: 7px;
     }
@@ -1773,6 +1769,9 @@
     .offer-list {
         gap: 1rem;
     }
+    .offer{
+        width: calc(100%/3 - 1rem*0.7);
+    } 
 
     .offer .stat-block {
         font-size: 6px;
@@ -1927,8 +1926,8 @@
         width: 30%;
     }
     .offer{
-        width: 40%;
-    }
+        width: calc(100%/2 - 1rem*0.7);
+    } 
 
 }
 
@@ -2957,7 +2956,7 @@
     }
 
     .offer img {
-        height: 200px;
+        height: 200px !important;
     }
 
     .offer .stat-block {
