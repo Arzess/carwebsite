@@ -1,7 +1,7 @@
 const cookieHTML = `<form class="cookie">
       <header class="top">
         <p>Цей сайт використовує файли cookie</p>
-        <button class="close-button" type="button">&#10006;</button>
+        <button class="close-button" type="button">x</button>
       </header>
       <article>
         <p>
