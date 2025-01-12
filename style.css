@@ -322,7 +322,7 @@ header .menu-button:not(.opened) g path {
 }
 .menu .close .close-button{
     border: 0;
-    font-size: 1.5rem;
+    font-size: 3rem;
     padding: 0.5rem;
     color: var(--text-color);
     opacity: 0.5;

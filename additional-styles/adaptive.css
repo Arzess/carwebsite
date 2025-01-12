@@ -2586,7 +2586,9 @@
         height: calc(100vh - 64px);
         /* overflow-y: scroll; */
     }
-
+    .menu .close .close-button{
+        font-size: 2rem;
+    }
     .menu .logo {
         display: none;
     }
