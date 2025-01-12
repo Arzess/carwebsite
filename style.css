@@ -324,13 +324,13 @@ header .menu-button:not(.opened) g path {
     border: 0;
     font-size: 3rem;
     padding: 0.5rem;
-    color: var(--text-color);
+    color: var(--text-color) !important;
     opacity: 0.5;
 }
 .menu .close .close-button:hover{
     border: 0;
     background-color: transparent;
-    color: var(--accent-color);
+    color: var(--accent-color) !important;
 }
 .menu.closed{
     opacity: 0;
