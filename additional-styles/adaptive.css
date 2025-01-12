@@ -3265,6 +3265,7 @@
     .cookie{
         width: auto;
         right: 0;
+        margin: 0 10px;
         bottom: 0;
     }
 }
