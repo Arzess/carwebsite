@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const containerRect = container.getBoundingClientRect();
       const filter = document.querySelector(".filter .filter-base");  
       if (scrollY > offsetTop) {
-          const maxStickyHeight = containerRect.bottom;
+          const maxStickyHeight = containerRect.bottom + filter.scrollHeight*1.5;
 
           if (scrollY < maxStickyHeight) {
               filter.style.top = `${scrollY - offsetTop - 20}px`;

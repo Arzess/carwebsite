@@ -303,10 +303,10 @@ header .menu-button:not(.opened) g path {
     height: calc(100vh - 94px);
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    /* gap: 100px; */
     left: 50%;
     transform: translateX(-50%);
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 94px;
     border: 1px solid var(--stroke-color-main);
@@ -316,10 +316,19 @@ header .menu-button:not(.opened) g path {
     transition: 0.2s ease;
     opacity: 1;
 }
+.menu .logo-close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 .menu .close{
     background-color: transparent;
     padding: 0;
-    padding-right: 30%;
+    right: -6.5rem;
+    width: max-content;
+    /* padding-right: 30%; */
+    position: absolute;
 }
 .menu .close .close-button{
     border: 0;

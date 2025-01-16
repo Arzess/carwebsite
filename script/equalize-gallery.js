@@ -1,4 +1,4 @@
-let section = document.querySelector(".best-offers")
+let section = document.querySelector(".best-offers") || document.querySelector(".marketplace")
 
 
 

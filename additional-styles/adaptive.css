@@ -2605,6 +2605,10 @@
     .menu .close{
         padding-right: 2rem;
     } 
+    .menu .logo-close .close{
+        position: relative;
+        width: 100%;
+    }
     .menu .close .close-button{
         font-size: 2rem;
     }
