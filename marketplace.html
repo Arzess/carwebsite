@@ -84,6 +84,9 @@
     </header>
     <!-- Menu -->
      <div class="menu closed">
+      <div class="close">
+        <button class="close-button" type="button">x</button>
+      </div>
       <img src="./img/skyline-motors-logo-header.png" alt="skyline motors logo" class="logo">
       <ul class="nav-menu">
         <li class="nav-element">
@@ -225,255 +228,267 @@
               </li>
              </ul>
           </div>
+
           <div class="filter">
-            <img src="./img/car.jpg" alt="nissan skyline" class="filter-img">
-            <div class="filter-settings">
-              <div class="filter-top">
-                <img src="./img/Filter_big_alt.svg" alt="filter icon"><p>фільтр</p> <img src="./img/arrow-up.svg" alt="arrow up" class="mobile filter-arrow">
-              </div>
-              <ul class="filter-categories-list">
-                <!-- Brand -->
-                <li class="filter-category">
-                  <div class="category-top"><p class="filter-category-name">Марка</p><img src="./img/arrow-up.svg" alt="arrow up"></div>
-                  <div class="category-content">
-                    <input type="search" id="search-bar-filter" placeholder="пошук..." class="searc-bar-filter">
-                    <ul class="brand-list">
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <!-- Price -->
-                <li class="filter-category">
-                  <div class="category-top"><p class="filter-category-name">Ціна</p><img src="./img/arrow-up.svg" alt="arrow up"></div>
-                  <div class="category-content no-scroll">
-                    <div class="price-range-boxes">
-                      <input type="number" class="range-bottom-limit" value="60000">
-                      <input type="number" class="range-upper-limit" placeholder="До">
+            <div class="filter-base">
+              <img src="./img/car.jpg" alt="nissan skyline" class="filter-img">
+              <div class="filter-settings">
+                <div class="filter-top">
+                  <img src="./img/Filter_big_alt.svg" alt="filter icon"><p>фільтр</p> <img src="./img/arrow-up.svg" alt="arrow up" class="mobile filter-arrow">
+                </div>
+                
+                <ul class="filter-categories-list">
+                  <li class="sort mobile">
+                    <!-- Sort -->
+                  <label class="marketplace-sort-container">сортувати:
+                    <select name="sort" class="marketplace-sort">
+                      <option value="sort1">ВІД ЧІНАЗЕСУ ДО САУНТРЕСУ</option>
+                    </select>
+                    </label>  
+                  </li>
+                  <!-- Brand -->
+                  <li class="filter-category">
+                    <div class="category-top"><p class="filter-category-name">Марка</p><img src="./img/arrow-up.svg" alt="arrow up"></div>
+                    <div class="category-content">
+                      <input type="search" id="search-bar-filter" placeholder="пошук..." class="searc-bar-filter">
+                      <ul class="brand-list">
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                      </ul>
                     </div>
-                      <div class="slider-container">
-                        <div class="slider-track"></div>
-                        <input type="range" min="0" max="100" value="30" id="slider-1" oninput="slideOne()">
-                        <input type="range" min="0" max="100" value="70" id="slider-2" oninput="slideTwo()">
+                  </li>
+                  <!-- Price -->
+                  <li class="filter-category">
+                    <div class="category-top"><p class="filter-category-name">Ціна</p><img src="./img/arrow-up.svg" alt="arrow up"></div>
+                    <div class="category-content no-scroll">
+                      <div class="price-range-boxes">
+                        <input type="number" class="range-bottom-limit" value="60000">
+                        <input type="number" class="range-upper-limit" placeholder="До">
                       </div>
+                        <div class="slider-container">
+                          <div class="slider-track"></div>
+                          <input type="range" min="0" max="100" value="30" id="slider-1" oninput="slideOne()">
+                          <input type="range" min="0" max="100" value="70" id="slider-2" oninput="slideTwo()">
+                        </div>
+                      </div>
+                  </li>
+                  <!-- The rest -->
+                  <li class="filter-category closed">
+                    <div class="category-top"><p class="filter-category-name">Марка</p><img src="./img/arrow-up.svg" alt="arrow up"></div>
+                    <div class="category-content">
+                      <input type="search" id="search-bar-filter" placeholder="пошук..." class="searc-bar-filter">
+                      <ul class="brand-list">
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                      </ul>
                     </div>
-                </li>
-                <!-- The rest -->
-                <li class="filter-category closed">
-                  <div class="category-top"><p class="filter-category-name">Марка</p><img src="./img/arrow-up.svg" alt="arrow up"></div>
-                  <div class="category-content">
-                    <input type="search" id="search-bar-filter" placeholder="пошук..." class="searc-bar-filter">
-                    <ul class="brand-list">
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="filter-category closed">
-                  <div class="category-top"><p class="filter-category-name">Марка</p><img src="./img/arrow-up.svg" alt="arrow up"></div>
-                  <div class="category-content">
-                    <input type="search" id="search-bar-filter" placeholder="пошук..." class="searc-bar-filter">
-                    <ul class="brand-list">
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="filter-category closed">
-                  <div class="category-top"><p class="filter-category-name">Марка</p><img src="./img/arrow-up.svg" alt="arrow up"></div>
-                  <div class="category-content">
-                    <input type="search" id="search-bar-filter" placeholder="пошук..." class="searc-bar-filter">
-                    <ul class="brand-list">
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                      <li class="brand">
-                        <input type="checkbox" class="brand-checkbox">
-                        <p class="brand-name">Volkswagen</p>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
+                  </li>
+                  <li class="filter-category closed">
+                    <div class="category-top"><p class="filter-category-name">Марка</p><img src="./img/arrow-up.svg" alt="arrow up"></div>
+                    <div class="category-content">
+                      <input type="search" id="search-bar-filter" placeholder="пошук..." class="searc-bar-filter">
+                      <ul class="brand-list">
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="filter-category closed">
+                    <div class="category-top"><p class="filter-category-name">Марка</p><img src="./img/arrow-up.svg" alt="arrow up"></div>
+                    <div class="category-content">
+                      <input type="search" id="search-bar-filter" placeholder="пошук..." class="searc-bar-filter">
+                      <ul class="brand-list">
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                        <li class="brand">
+                          <input type="checkbox" class="brand-checkbox">
+                          <p class="brand-name">Volkswagen</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="marketplace-right-block">

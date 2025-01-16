@@ -300,7 +300,7 @@ header .menu-button:not(.opened) g path {
     background-color: rgba(16, 0, 42, 0.8);
     backdrop-filter: blur(29px);
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 94px);
     display: flex;
     flex-direction: column;
     gap: 100px;
@@ -309,7 +309,6 @@ header .menu-button:not(.opened) g path {
     justify-content: center;
     align-items: center;
     margin-top: 94px;
-    padding-bottom: 94px;
     border: 1px solid var(--stroke-color-main);
     max-width: 100%;
     width: 98%;
@@ -320,7 +319,7 @@ header .menu-button:not(.opened) g path {
 .menu .close{
     background-color: transparent;
     padding: 0;
-    padding-right: 1rem;
+    padding-right: 30%;
 }
 .menu .close .close-button{
     border: 0;
@@ -385,6 +384,9 @@ text-decoration-skip-ink: none;
 .breadcrumbs a{
     color: var(--text-color);
 }
+.breadcrumb.current a{
+    color: var(--accent-color);
+}
 .breadcrumbs .back-button{
     padding: 17.5px;
     border: 1px solid var(--accent-color);
@@ -433,6 +435,7 @@ text-decoration-skip-ink: none;
     max-width: 98%;
     width: 98%;
     gap: 10px;
+    position: relative;
     display: flex;
     flex-direction: row;
 }
@@ -443,6 +446,7 @@ text-decoration-skip-ink: none;
     display: flex;
     flex-direction: column;
     gap: 60px;
+    margin-left: auto;
 }
 .marketplace-right-block .right-block-top{
     display: flex;
@@ -570,11 +574,25 @@ display: none;
 
 /* Filter */
 .marketplace .filter{
-    width: 508px;
-    min-width: 508px;
+    width: calc(100%/3) !important;
+    min-width: calc(100%/3) !important;
+    display: flex;
+
+    position: relative;
+    /* flex: 1; */
+}
+.filter .filter-base{
+    height: max-content;
+    top: 0;
+    width: 100%;
+    gap: 8px;
+    height: 600px;
+    border-bottom: 1px solid var(--input-color);
+    overflow-y: scroll;
+    position: relative;
+    max-height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 8px;
 }
 .filter .filter-img, .filter .filter-settings{
     width: 100%;
@@ -585,6 +603,12 @@ display: none;
     opacity: 0.5;
     height: 208px;
     object-fit: cover;
+}
+.filter.closed .filter-top img{
+    transform: none;
+}
+.filter.closed .filter-categories-list{
+    height: 0;
 }
 
 .filter .filter-top{
@@ -599,6 +623,7 @@ display: none;
 }
 .filter .filter-top .filter-arrow{
     margin-left: 15px;
+    transform: rotate(180deg);
 }
 .filter-categories-list{
     display: flex;
@@ -618,6 +643,9 @@ display: none;
 }
 .filter .filter-category:first-child .category-top{
     border-bottom: 1px solid var(--stroke-color-main);
+}
+.filter .filter-category:last-child{
+    border-bottom: 0;
 }
 .filter .category-top{
     display: flex;
@@ -802,6 +830,9 @@ gap: 7px;
     justify-content: flex-end;
     color: var(--text-color);
   }
+  .marketplace .page-menu .page a{
+    color: var(--text-color)
+  }
   .marketplace .page-menu .page{
 font-size: 16px;
 font-weight: 400;
@@ -812,7 +843,7 @@ text-underline-position: from-font;
 text-decoration-skip-ink: none;
 border: 1px solid var(--input-color);
 padding: 12px 18px;
-
+color: var(--text-color);
   }
   .marketplace .page-menu .page.current{
     border: 1px solid var(--accent-color);
@@ -919,10 +950,9 @@ padding: 12px 18px;
     justify-content: center;
     display: flex;
     user-select: none;
-    padding-right: 20px;
+    padding: 0 20px;
     z-index: 5;
     pointer-events: all;
-    padding-left: 40px;
     background-color: rgba(22, 31, 54, 0.8);
     backdrop-filter: blur(26px);
 }
@@ -1145,6 +1175,7 @@ text-decoration-skip-ink: none;
     gap: 0.5rem;
     display: flex;
     flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 .car-view .car-year{
@@ -1828,7 +1859,7 @@ text-underline-position: from-font;
 text-decoration-skip-ink: none;
 color: white;
 display: flex;
-margin-bottom: 20px;
+margin: 10px 0;
 align-items: center;
 justify-content: space-between;
 }
@@ -2328,6 +2359,12 @@ margin-bottom: 100px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.feedback .consultation-form .comment-container{
+    align-items: flex-start;
+}
+.feedback .consultation-form .comment-container .placeholder{
+    padding-top: 20px;
 }
 .consultation-form .language-select{
     background-color: rgba(0, 0, 0, 0.25);

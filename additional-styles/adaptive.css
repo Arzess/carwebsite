@@ -2247,8 +2247,23 @@
     .marketplace .filter {
         min-width: 0;
         width: inherit;
+        width: 100% !important;
     }
-
+    .marketplace .filter-base{
+        height: auto;
+        overflow: visible;
+        border: 0;
+    }
+    .marketplace .filter .sort.mobile .marketplace-sort-container{
+        display: flex;
+        padding: 7px;
+        border: 0;
+        width: 100%;
+    }
+    .marketplace .filter .sort.mobile{
+        border: 0;
+        width: 100%;
+    }
     .marketplace .filter-settings {
         border: 0;
     }

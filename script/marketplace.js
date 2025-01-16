@@ -2,12 +2,21 @@
 
 const marketplaceRightBlock = document.querySelector(".marketplace .marketplace-right-block");
 const filter = document.querySelector(".filter")
+
+const filterTop = filter.querySelector(".filter-top")
+filterTop.addEventListener("click", ()=>{
+  if (window.innerWidth <= 500){
+    filter.classList.toggle("closed");
+  }
+})
+
 const tailorRightBlock = () => {
   if (window.innerWidth <= 500){
     marketplaceRightBlock.style.width = "100%";
   }
   else{
-    marketplaceRightBlock.style.width = "calc(100% - " + filter.offsetWidth + "px)";
+    let calculatedWidth = filter.offsetWidth+10
+    marketplaceRightBlock.style.width = "calc(100% - " + calculatedWidth + "px)";
 
   }
 }
@@ -57,8 +66,48 @@ filter_categories.forEach(category => {
   )
 })
 
+const adjustScrollbar = () => {
+  const container = document.querySelector('.filter');
+  const content = document.querySelector('.filter .filter-base');
+  if (content.scrollHeight > container.clientHeight) {
+    container.style.overflowY = 'auto';
+  } else {
+    container.style.overflowY = 'hidden'; 
+  }
+};
 
+document.addEventListener('DOMContentLoaded', adjustScrollbar);  // Call on page load
+
+window.addEventListener('resize', adjustScrollbar);
 
 window.addEventListener("resize", ()=>{
   tailorRightBlock();
 })
+document.addEventListener("DOMContentLoaded", () => {
+  const container = filter.parentElement;
+  const offsetTop = filter.offsetTop;
+  adjustFilterHeight();
+  adjustScrollbar();
+  window.addEventListener("scroll", () => {
+    if (window.innerWidth > 500){
+      const scrollY = window.scrollY;
+      const containerRect = container.getBoundingClientRect();
+      const filter = document.querySelector(".filter .filter-base");  
+      if (scrollY > offsetTop) {
+          const maxStickyHeight = containerRect.bottom;
+
+          if (scrollY < maxStickyHeight) {
+              filter.style.top = `${scrollY - offsetTop - 20}px`;
+              filter.parentElement.style.alignItems = `start`
+          } else {
+              filter.style.top = `0`;
+              filter.parentElement.style.alignItems = `flex-end` 
+          }
+      } else {
+          filter.style.top = "0";
+          filter.parentElement.style.alignItems = `start`
+      }
+    }  
+    
+  });
+});

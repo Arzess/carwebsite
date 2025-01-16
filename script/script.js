@@ -1,7 +1,7 @@
 // Menu toggle logic
 const menuButton = document.querySelector(".header .menu-button");
 const menu = document.querySelector(".menu");
-const innerMenuClose = menu.querySelector(".close .close-button");
+const innerMenuClose = document.querySelector(".menu .close .close-button");
 const toggleMenu = () => {
   document.body.classList.toggle("steady");
   menuButton.classList.toggle("opened");
