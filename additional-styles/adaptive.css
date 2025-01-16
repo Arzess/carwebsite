@@ -3302,7 +3302,7 @@
 
 @media screen and (max-height: 1200px) {
     .menu {
-        gap: 50px;
+        /* gap: 50px; */
     }
 
     .menu .logo {
@@ -3338,7 +3338,7 @@
 /* Menu fix mobile */
 @media screen and (max-width: 860px) and (max-height: 750px) {
     .menu {
-        gap: 20px;
+        /* gap: 20px; */
     }
 
     .menu .nav-menu::after {
