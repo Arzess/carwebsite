@@ -86,8 +86,6 @@ window.addEventListener("resize", ()=>{
 document.addEventListener("DOMContentLoaded", () => {
   const container = filter.parentElement;
   const offsetTop = filter.offsetTop;
-  adjustFilterHeight();
-  adjustScrollbar();
   window.addEventListener("scroll", () => {
     if (window.innerWidth > 500){
       const scrollY = window.scrollY;
