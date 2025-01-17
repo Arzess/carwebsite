@@ -2599,7 +2599,7 @@
         position: fixed;
         /* padding-bottom: 64px; */
         padding: 0;
-        height: calc(100vh - 64px - var(--safe-area-inset-bottom));
+        height: calc(100vh - 64px - env(safe-area-inset-bottom));
         /* overflow-y: scroll; */
     }
     .menu .close{
