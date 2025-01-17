@@ -2831,7 +2831,12 @@
     .filter .filter-img {
         display: none;
     }
-
+    .filter.closed .filter-top img{
+        transform: none;
+    }
+    .filter.closed .filter-categories-list{
+        height: 0;
+    }
     /* Hero */
     .hero .cars,
     .hero .backlight {
@@ -3302,7 +3307,7 @@
         bottom: 30vh;
     } 
 } */
-@supports (-webkit-touch-callout: none ) and (max-width: 500px;) {
+@supports (-webkit-touch-callout: none ) and (max-width: 500px) {
     .menu {
         height: calc(100vh - 64px - env(safe-area-inset-bottom, 40px));
     }

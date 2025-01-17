@@ -92,11 +92,15 @@ document.addEventListener("DOMContentLoaded", () => {
       const containerRect = container.getBoundingClientRect();
       const filter = document.querySelector(".filter .filter-base");  
       if (scrollY > offsetTop) {
-        const maxStickyHeight = container.offsetTop + container.offsetHeight - filter.offsetHeight;
+        const maxStickyHeight = container.offsetTop + container.offsetHeight - filter.offsetHeight + 70;
 
 
           if (scrollY < maxStickyHeight) {
-              filter.style.top = `${scrollY - offsetTop - 20}px`;
+              let scrollHeightFilter = scrollY - offsetTop - 20 - 70;
+              if (scrollHeightFilter < 0){
+                scrollHeightFilter = 0
+              }
+              filter.style.top = `${scrollHeightFilter}px`;
               filter.parentElement.style.alignItems = `start`
           } else {
               filter.style.top = `0`;

@@ -613,12 +613,6 @@ display: none;
     height: 208px;
     object-fit: cover;
 }
-.filter.closed .filter-top img{
-    transform: none;
-}
-.filter.closed .filter-categories-list{
-    height: 0;
-}
 
 .filter .filter-top{
     display: flex;
