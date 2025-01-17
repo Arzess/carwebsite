@@ -2598,7 +2598,7 @@
         gap: 25px;
         position: fixed;
         padding: 0;
-        height: calc(100vh - 64px - env(safe-area-inset-bottom));
+        height: calc(100vh - 64px);
     }
     .menu .close{
         padding-right: 2rem;
@@ -3302,7 +3302,11 @@
         bottom: 30vh;
     } 
 } */
-
+@supports (-webkit-touch-callout: none ) and (max-width: 500px;) {
+    .menu {
+        height: calc(100vh - 64px - env(safe-area-inset-bottom, 40px));
+    }
+}
 @media screen and (max-height: 1200px) {
     .menu {
         /* gap: 50px; */
