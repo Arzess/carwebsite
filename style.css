@@ -443,10 +443,10 @@ text-decoration-skip-ink: none;
 .marketplace .container{
     max-width: 98%;
     width: 98%;
-    gap: 10px;
+    gap: 2rem;
+    flex-direction: column;
     position: relative;
     display: flex;
-    flex-direction: row;
 }
 .marketplace .mobile-block .sub-heading-text{
     text-align: center;
@@ -579,7 +579,13 @@ display: none;
 
 }
 
-
+.marketplace .marketplace-main{
+    display: flex;
+    gap: 10px;
+}
+.marketplace .offer{
+    width: calc(100%/3 - 7px);
+}
 
 /* Filter */
 .marketplace .filter{
