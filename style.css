@@ -910,7 +910,7 @@ color: var(--text-color);
     display: flex;
 }
 .car-view-stats.fullscreen .main-img{
-    /* object-fit: contain; */
+    object-fit: contain;
 }
 .car-view-stats.fullscreen .car-view-desc{
     display: none;
@@ -961,6 +961,7 @@ color: var(--text-color);
     user-select: none;
     padding: 0 20px;
     z-index: 5;
+    cursor: pointer;
     pointer-events: all;
     background-color: rgba(22, 31, 54, 0.8);
     backdrop-filter: blur(26px);
@@ -991,6 +992,7 @@ color: var(--text-color);
 }
 .car-view .gallery-list{
     display: flex;
+    scroll-snap-type: x;
     overflow-x: scroll;
     flex-direction: row;
     scroll-behavior: smooth;
