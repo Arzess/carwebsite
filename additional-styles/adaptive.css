@@ -2599,15 +2599,20 @@
         position: fixed;
         /* padding-bottom: 64px; */
         padding: 0;
-        height: calc(100vh - 64px);
+        height: calc(100vh - 64px - var(--safe-area-inset-bottom));
         /* overflow-y: scroll; */
     }
     .menu .close{
         padding-right: 2rem;
     } 
+    .menu .logo-close{
+        width: 100%;
+        
+    }
     .menu .logo-close .close{
         position: relative;
         width: 100%;
+        left: 0;
     }
     .menu .close .close-button{
         font-size: 2rem;
