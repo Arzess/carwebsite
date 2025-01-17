@@ -3010,7 +3010,10 @@
         line-height: 20px;
         background-color: var(--accent-color);
     }
-
+    .marketplace-main{
+        flex-direction: column;
+        width: 100%;
+    }
     .best-offers .container {
         gap: 20px;
     }
